@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="movie_chart.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>    
+
+    <div id="container"><!-- 무비차트 큰 박스 -->
+
+        <!-- 무비차트 타이틀 -->
+        <div class="chart_title">
+            <h3 class="title">무비차트</h3>
+            <div class="submenubox">
+                <ul class="submenu">
+                    <li class="chart" onclick="location.href='movie_chart.html'"><a href="#"></a> 무비차트</li>
+                    <li class="weekChart" onclick="location.href='movie_weekChart.html'"><a href="#" ></a>상영예정작</li>
+                </ul>
+            </div>
+            
+        
+        </div>
+        
+
+       <!--  <hr style="width: 100%; border-width: 2px 0 0 0; border-color: black; ">
+ -->
+        <div class="now"><!-- 상영작 옵션 선택 -->
+            <input type="checkbox" class="check">
+            <label class="nowMovie">현재 상영작만 보기</label>
+            <select name="type" class="sel">
+                <option value="">예매율순</option>
+                <option value="">평점순</option>
+                <option value="">관람객순</option>
+            </select>
+        </div>
+
+        <div class="movieBox"><!-- 상영작 큰 박스 -->
+
+            <div class="box-list"><!-- 상영작 4개씩 1박스 -->
+
+                <li class="box"><!-- 상영작 1개 -->
+                    <div class="number-top">No.1</div>
+                    <a href="#"><img src="img/no1.jpg" class="movieImg1" onclick="location.href='movie_info.html'"></a>
+                    <div class="inner"><!-- 영화 정보 박스 -->
+                        <div class="innerBox">
+                        <a href="#" class="movieName">미션 임파서블 - 데드 레코닝 PART ONE</a><!-- 영화제목 누르면 이동 -->
+                        <p class="rate">예매율 33.0%</p>
+                        <p class="day">2023.07.12 개봉 </p>
+                        <p class="Dday">&nbsp;D-5</p>
+                        </div>
+                        <div class="ticketing">
+                            <a href="" class="ticketing">예매하기</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="box"><!-- 상영작 1개 -->
+                    <div class="number-top">No.2</div>
+                    <a href="#"><img src="img/elemental.jpg" class="movieImg" onclick="location.href='movie_info2.html'"></a>
+                    <div class="inner"><!-- 영화 정보 박스 -->
+                        <div class="innerBox">
+                        <a href="#" class="movieName">엘리멘탈 </a><!-- 영화제목 누르면 이동 -->
+                        <p class="rate">예매율 21.1%</p>
+                        <p class="day">2023.07.12 개봉 </p>
+                        <!-- <p class="Dday">&nbsp;D-7</p> -->
+                        </div>
+                        <div class="ticketing">
+                            <a href="" class="ticketing">예매하기</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="box"><!-- 상영작 1개 -->
+                    <div class="number-top">No.3</div>
+                    <a href="#"><img src="img/spiderman.jpg" class="movieImg" onclick="location.href='movie_info3.html'"></a>
+                    <div class="inner"><!-- 영화 정보 박스 -->
+                        <div class="innerBox">
+                        <a href="" class="movieName">스파이더맨-어크로스 더 유니버스</a><!-- 영화제목 누르면 이동 -->
+                        <p class="rate">예매율 13.1%</p>
+                        <p class="day">2023.07.12 개봉 </p>
+                        <!-- <p class="Dday">&nbsp;D-7</p> -->
+                        </div>
+                        <div class="ticketing">
+                            <a href="" class="ticketing">예매하기</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="ad">
+                    <img src="img/ad.png" alt="">
+                </li>
+                
+            </div>
+
+            <div class="box-list"><!-- 상영작 4개씩 1박스 -->
+
+                <li class="box"><!-- 상영작 1개 -->
+                    <div class="number">No.4</div>
+                    <a href="#"><img src="img/m4.jpg" class="movieImg"></a>
+                    <div class="inner"><!-- 영화 정보 박스 -->
+                        <div class="innerBox">
+                        <a href="#" class="movieName">악마들</a><!-- 영화제목 누르면 이동 -->
+                        <p class="rate">예매율 4.9%</p>
+                        <p class="day">2023.07.05 개봉 </p>
+                        <!-- <p class="Dday">&nbsp;D-7</p> -->
+                        </div>
+                        <div class="ticketing">
+                            <a href="" class="ticketing">예매하기</a>
+                        </div>
+                    </div>
+                </li>
+
+               <li class="box"><!-- 상영작 1개 -->
+                    <div class="number">No.5</div>
+                    <a href="#"><img src="img/m5.jpg" class="movieImg"></a>
+                    <div class="inner"><!-- 영화 정보 박스 -->
+                        <div class="innerBox">
+                        <a href="#" class="movieName">극장판 도라에몽-진구와 하늘의 유토피아 </a><!-- 영화제목 누르면 이동 -->
+                        <p class="rate">예매율 4.3%</p>
+                        <p class="day">2023.07.08 개봉 </p>
+                        <p class="Dday">&nbsp;D-1</p>
+                        </div>
+                        <div class="ticketing">
+                            <a href="" class="ticketing">예매하기</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="box"><!-- 상영작 1개 -->
+                    <div class="number">No.6</div>
+                    <a href="#"><img src="img/m6.jpg" class="movieImg"></a>
+                    <div class="inner"><!-- 영화 정보 박스 -->
+                        <div class="innerBox">
+                        <a href="#" class="movieName">인디아나 존스-운명의 다이얼 </a><!-- 영화제목 누르면 이동 -->
+                        <p class="rate">예매율 4.1%</p>
+                        <p class="day">2023.06.28 개봉 </p>
+                        <!-- <p class="Dday">&nbsp;D-7</p> -->
+                        </div>
+                        <div class="ticketing">
+                            <a href="" class="ticketing">예매하기</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="box"><!-- 상영작 1개 -->
+                    <div class="number">No.7</div>
+                    <a href="#"><img src="img/m7.jpg" class="movieImg"></a>
+                    <div class="inner"><!-- 영화 정보 박스 -->
+                        <div class="innerBox">
+                        <a href="#" class="movieName">범죄도시3</a><!-- 영화제목 누르면 이동 -->
+                        <p class="rate">예매율 3.3%</p>
+                        <p class="day">2023.05.31 개봉 </p>
+                        <!-- <p class="Dday">&nbsp;D-7</p> -->
+                        </div>
+                        <div class="ticketing">
+                            <a href="" class="ticketing">예매하기</a>
+                        </div>
+                    </div>
+                </li>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>

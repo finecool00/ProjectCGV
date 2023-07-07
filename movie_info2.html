@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="movie_info.css">
+
+    <link rel="stylesheet" href="swiper.css">
+    <script src="swiper.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <script>
+        var freeEgg = document.getElementById("freeEgg");
+        freeEgg.onclick = function() {
+            window.open('freeEgg.html', 'frEgg', 
+                        'width = 500px, height = 500px, left=300px, top=300px');
+        }
+
+    </script>
+
+
+</head>
+<body>
+    
+    <div id="container"><!-- 영화 정보창 큰 박스 -->
+
+        <div><!-- 상단 영화정보 박스 -->
+            <div class="box_left"><!-- 영화 이미지 -->
+                <img src="img/elemental.jpg" class="movie_img">
+            </div>
+
+            <div class="box_right">
+                <div class="box-title">
+                    <div class="movie_title"><!-- 영화 제목 -->
+                        <p class="movieName">엘리멘탈</p>
+                        <div class="nowShow">현재상영중</div>                        
+                        <p class="subName">Elemental</p>
+                    </div>
+                    <div class="m_rate"><!-- 예매율 정보 -->
+                        <p>예매율 21.1% </p>
+                    </div>
+                </div>
+                <div class="box_bot">
+                    <div class="m_info2"><!-- 영화 간략한 정보 -->
+                        <p>감독 :  피터 손 / 배우 :  레아 루이스 ,  마무두 아티</p>
+                        <p>장르 : 애니메이션 / 기본 정보 :  전체관람가, 109분, 미국</p>
+                        <p>개봉 : 2023.06.14</p>
+                    </div>                    
+                    <div class="ticketingBox"><!-- 예매하기 버튼 -->
+                        <a href="#" id="freeEgg">프리에그</a> <!--  -->
+                        <a href="#" class="ticketing">예매하기</a>                        
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        
+        <div><!-- 영화 관련 링크 메뉴 -->
+            <div class="m_menu">
+                <ul class="menu">
+                    <li><a href="#"></a>☞ &nbsp; 주요정보</li>
+                    <li><a href="#"></a>트레일러</li>
+                    <li><a href="#"></a>스틸컷</li>
+                    <li><a href="#"></a>평점/리뷰</li>
+                    <li><a href="#"></a>상영시간표</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="synopsis"><!-- 시놉시스 -->
+            <p>디즈니·픽사의 놀라운 상상력!</p>
+            <p>올여름, 세상이 살아 숨 쉰다</p>
+            <br/>
+            <p>불, 물, 공기, 흙 4개의 원소들이 살고 있는 ‘엘리멘트 시티’</p>
+            <p>재치 있고 불처럼 열정 넘치는 ‘앰버'는 어느 날 우연히</p>
+            <p>유쾌하고 감성적이며 물 흐르듯 사는 '웨이드'를 만나 특별한 우정을 쌓으며,</p>
+            <p>지금껏 믿어온 모든 것들이 흔들리는 새로운 경험을 하게 되는데...</p>
+            <br/>
+            <p>제 76회 칸 영화제 폐막작 선정!</p>
+            <p><굿 다이노> 피터 손 감독 연출</p>
+            <p><인사이드 아웃>, <소울> 피트 닥터 제작 참여</p>
+            <br/>
+            <p>6월 극장 대개봉,</p>
+            <p>웰컴 투 ‘엘리멘트 시티’!</p>
+        </div>
+
+        <div class="graphBox"><!-- 그래프 박스 -->
+            <img src="img/graph2.jpg">  
+        </div>
+
+        <div class="trailer_box"><!-- 트레일러 큰 박스-->
+
+            <div class="trailer"><!-- 타이틀 -->
+                <p class="trailer_title">트레일러</p>
+            </div>
+
+            <div class="trailer_video"><!-- 트레일러 영상 -->
+                <ul class="videoList">
+                    <div class="video">
+                        <li><img src="img/v1-1.jpg" class="thumbnail"></li>
+                        <li class="vName">'엘리멘탈, 10점 만점에 10점!' 영상</li>
+                        <li class="date">2023.07.04</li>
+                    </div>
+                    <div class="video">
+                        <li><img src="img/v2-1.jpg" class="thumbnail"></li>
+                        <li class="vName">불 앰버 물 웨이드의 케미-스토리 영상</li>
+                        <li class="date">2023.07.04</li>
+                    </div>
+                    <div class="video">
+                        <li><img src="img/v3.jpg" class="thumbnail"></li>
+                        <li class="vName">최애작 갱신! 시사 관객 극찬 리뷰 영상</li>
+                        <li class="date">2023.07.04</li>
+                    </div>
+                </ul>                
+            </div>
+            <div class="trailerName"><!-- 영상 제목 -->
+
+            </div>
+        </div>
+
+        <!-- 임시로 줄 띄운 것 -->
+        <br><br>
+
+        <div class="photo_box"><!-- 스틸컷 큰 박스 -->
+
+            <div class="photo_title"><!-- 스틸컷 타이틀 -->
+                <p class="title">스틸컷</p>
+            </div>
+
+            <div class="swiperBox"><!-- 스틸컷 이미지 - Swiper -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="photo swiper-slide"><img src="img/e1.jpg" class="stillImg"></div>
+                        <div class="photo swiper-slide"><img src="img/e2.jpg" class="stillImg"></div>
+                        <div class="photo swiper-slide"><img src="img/e3.jpg" class="stillImg"></div>                        
+                        <div class="photo swiper-slide"><img src="img/e4.jpg" class="stillImg"></div> 
+                        <div class="photo swiper-slide"><img src="img/e5.jpg" class="stillImg"></div> 
+                        <!-- <div class="photo swiper-slide"><img src="img/5.jpg" class="stillImg"></div>  -->
+                    </div>
+                             
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>            
+                </div>
+
+                <script>
+                    //스와이퍼
+                    const swiper = new Swiper('.swiper', {
+            
+                        // Optional parameters
+                        direction: 'horizontal',
+                        loop: true,                        
+                        autoplay: { //자동재생
+                        delay: 5000,
+                        },                                             
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },  
+                    });            
+                </script>  
+                   
+            </div>
+       
+        </div> <!-- 스틸컷 end -->
+
+        <!-- 임시로 줄 띄운 것 -->
+        <br><br>
+
+        <div class="contentData"><!-- 관람 포인트 -->
+            <div class="content_title"><!-- 타이틀 -->
+                <p class="title">영상미가 뛰어나고</p>
+                <p class="title">감동적인 영화</p>
+            </div>                      
+        </div>            
+     
+        <div class="pointBox"><!-- 그래프 박스 -->
+            <img src="img/point.jpg" class="point">
+        </div>
+
+        <div class="reviewtitle">
+            <h3>실관람평</h3>
+        </div>   
+
+        <div class="reviewBox">
+           
+            <div class="reviewList">
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/GGo.jpg" class="profileImg">
+                    </li>
+                    <li class="content">
+                        영상도 넘 예쁘고 줄거리도 귀여워요. <br>
+                        웨이드 눈빛을 중점둬서 영화보면 더 좋을 거 같아요
+                        <p class="star">★★★★★</p>
+                    </li>
+                </ul>
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/반다나_웨이들_디.png" class="profileImg">
+                    </li>
+                    <li class="content">
+                        마음 따뜻해지는 영화 :)                         
+                        <p class="star">★★★★★</p>
+                    </li>
+                </ul>
+                <ul class="review">
+                    <dliiv class="profile">
+                        <img src="img/zzangGoo.png" class="profileImg">
+                    </li>
+                    <li class="content">
+                        아름다웠고 감동적이었고 유쾌했던<br>
+                        올해 최고의 영화.
+                        <p class="star">★★★★★</p>                       
+                    </li>
+                </ul>
+            </div>
+
+            <div class="reviewList">
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/yuri.jpg" class="profileImg">
+                    </li>
+                    <li class="content">
+                        진심과 사랑은 하나가 된다. 여운이 남는 영화. 
+                        <p class="star">★★★★★</p>
+                    </li>
+                </ul>
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/kirby.png" class="profileImg">
+                    </li>
+                    <li class="content">
+                        어른을 위로하는 애니메이션.<br>
+                        인생영화. 
+                        <p class="star">★★★★★</p>
+                    </li>
+                </ul>
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/gom.jpg" class="profileImg">
+                    </li>
+                    <li class="content">
+                        부모님의 기대에 부응하고 싶은 자식들의 마음과<br> 
+                        좋은것만 물려주려 힘들게 살아오신 부모님에 대한 존경
+                        <p class="star">★★★★★</p>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+        
+
+    </div>
+
+    <script>
+                   
+        var freeEgg = document.getElementById("freeEgg");          
+
+        freeEgg.onclick = function() {
+           
+            freeEgg.style.backgroundColor='#ffedec';
+            freeEgg.style.border = '2px solid #FFBDBD';
+            freeEgg.innerHTML = '&nbsp; &nbsp; &nbsp; ♥';          
+            freeEgg.style.color = '#FAAAAA';
+            window.open('freeEgg2.html', 'freeEgg', 'width=450px, height=330px, left = 300px, top = 300px');
+
+        }
+    
+    </script>
+
+</body>
+</html>

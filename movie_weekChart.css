@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+}
+
+*{padding: 0; margin: 0;}
+ul, li {list-style: none;} 
+*{ margin: 0 auto;} /* width: 100%; */
+/* img{max-width: 100%; height: auto;}
+ */
+
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+#container{
+    width: 1000px;
+    padding: 70px 400px 100px 400px;
+}
+/* #title {margin-bottom: 12px;} */
+.title {
+    display: flex;
+    float: left;
+    font-size: xx-large; font-weight: 600; 
+    height: 60px; padding-top: 10px; 
+    border-bottom: 3px solid black;
+    /* font-size: xx-large; font-weight: 600; 
+    height: 60px; padding-top: 10px; 
+    border-bottom: 3px solid black; */
+}
+.submenubox{display: inline-block;}
+.submenu{
+    display: inline-block;
+    width: 100px; height: 70px;    
+}
+.now {
+    display: flex;
+    font-size: smaller;     
+    vertical-align: middle;
+    overflow: visible;
+   /*  padding-top: 5px; padding-bottom: 5px;  */
+    margin-top: 00px; margin-bottom: 26px;
+}
+
+.check {
+    width: 10px;
+    display: inline-block;
+    vertical-align: middle; margin: 3px 6px 3px 4px;} /* box-sizing: border-box; display: inline-block; */
+
+.nowMovie {display: inline-block; width: 200px;}
+
+.sel {
+    line-height: 30px; 
+    text-align: right;
+    padding: 5px; 
+    border-color: rgb(138, 138, 138);
+    width: 88px;
+    float: right;
+}
+.sel:focus {outline: 2px solid rgb(221, 199, 199);}
+.sel option {
+    text-align: left;
+}
+
+.movie_date { /*  .date  */   
+    display: flex;  
+    float: left;
+    margin-bottom: 30px;    
+}
+.movie_date .date{font-size: 50px; }
+
+.box-list {   
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 60px;   
+    margin-left: -64px;      
+    position: relative; 
+    box-sizing: border-box;
+}
+.box {    
+    width: 197px; 
+    display: inline-block;
+    margin-left: 66.3px;
+    /*  margin-right: 50px; */
+    margin-bottom: 30px;    
+}
+
+.ad {
+    display: flex;
+    position: absolute;
+    /* float: right; */
+    right: 0;
+    top: 0;
+   /*  margin-left: 68px; */
+    width: 190px; height: 414px; 
+    /* display: inline-block; */
+    padding: 2px 4px;    
+}
+.number-top {   
+    height: 25px;
+    background-color: rgb(252, 66, 90); 
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    padding-top: 2px;
+    margin-bottom: 5px;
+}
+.number {
+    height: 25px;
+    background-color: rgb(49, 49, 49); 
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    padding-top: 2px;
+    margin-bottom: 5px;
+}
+
+.movieImg1{width: 197px; height: 285px;}
+.movieImg { width: 197px; height: 285px;}
+.movieName {
+    display: block;
+    text-decoration: none; 
+    font-weight: 700; 
+    color: rgb(71, 71, 71); 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.innerBox {margin-bottom: 10px; }
+.rate{font-size: 12px;}
+.day{font-size: 12px; display: inline;}
+.Dday{
+    font-size: smaller; 
+    font-weight: 900; 
+    color: rgb(252, 66, 90); 
+    display: inline;   
+}
+.ticketing{
+    float: left;
+    width: 100px; 
+    height: 20px;
+    background-color: rgb(252, 66, 90); 
+    color: white;
+    text-decoration: none;
+    text-align: center;    
+    font-size: 13px;
+    font-weight: 600;    
+    border-radius: 5px;
+    padding-bottom: 3px;
+    margin-top: 3px;     
+}

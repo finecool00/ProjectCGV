@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <style>  
+       
+        *{padding: 0; margin: 0;}
+        ul, li {list-style: none;} 
+        *{width: 100%; margin: 0 auto;}
+       body{
+            background-color: rgb(252, 247, 243);
+            width: 100%;
+            position: relative;
+        }
+        .box{
+            position: absolute;
+        }
+       .title {
+            margin-top: 40px;
+            margin-bottom: 34px;
+            font-size: 26px;
+            font-weight: 600;
+            text-align: center;
+            color: rgb(71, 71, 71);
+        }
+        .box .qu{
+            display: block;
+            justify-content: center;
+            align-items: center;
+           /*  margin-left: 10px;  */           
+            font-size: 15px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .explan{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-left: 250px; */
+            font-size: 12px;
+            font-weight: 300;
+            text-align: center;
+            
+        }
+        .line{
+            color: rgb(167, 166, 166);
+            width: 300px;
+        }
+        
+        #btn {
+            display: block; /* flex */
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 175%;
+            left: 41%;
+            background-color: rgb(252, 66, 90);
+            width: 90px; 
+            height: 30px; line-height: 30px;
+            border: none;
+            font-weight: 700;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>    
+
+    <p class="title">스파이더맨-<br>어크로스 더 유니버스</p>
+
+    <hr class="line"><br>
+
+    <div class="box">
+        <!-- <p class="qu">이 영화가 기대되시나요?</p> -->
+        <!-- <p class="explan">'기대돼요!'를 선택하시면 '기대되는 영화'에 추가됩니다.</p> -->
+        <p class="qu">기대되는 영화에 추가되었습니다!</p>
+        <p class="explan">극장에서 만나요! : )</p>
+    </div>  
+
+    <button id="btn">확인</button>
+
+    <script>
+        /* var title = document.querySelector(".title"); */
+        
+        var btn = document.getElementById("btn");
+        btn.onclick = function() {
+            window.close(); //창 종료
+        }
+        
+    </script>
+
+</body>
+</html>
