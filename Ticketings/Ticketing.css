@@ -18,7 +18,7 @@ ul, li {list-style: none;}
 /* body영역 */
 
 .ticketings {
-    margin-left: 410px;
+    margin-left: 770px;
 }
 
 .reserv_top_menu {
@@ -32,10 +32,11 @@ ul, li {list-style: none;}
     float: right;
 }
 
-.main_box11 {
-    /* border: 1px solid #777; */
+.main_box {
+    border: 1px solid #777;
     display: flex;
     justify-content: space-between;
+
     width: 1000px;
 }
 
@@ -620,7 +621,7 @@ ul, li {list-style: none;}
 .swiper {
     width: 600px;
     height: 300px;
-    padding-right: 450px;
+    padding-right: 760px;
 }
 
 
