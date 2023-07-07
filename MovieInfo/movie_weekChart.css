@@ -5,7 +5,7 @@
 
 *{padding: 0; margin: 0;}
 ul, li {list-style: none;} 
-*{ margin: 0 auto;} /* width: 100%; */
+*{width: 100%; margin: 0 auto;} /* width: 100%; */
 /* img{max-width: 100%; height: auto;}
  */
 
@@ -13,24 +13,40 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 #container{
     width: 1000px;
-    padding: 70px 400px 100px 400px;
+    padding: 30px 400px 100px 450px;
 }
 /* #title {margin-bottom: 12px;} */
 .title {
-    display: flex;
-    float: left;
-    font-size: xx-large; font-weight: 600; 
-    height: 60px; padding-top: 10px; 
-    border-bottom: 3px solid black;
-    /* font-size: xx-large; font-weight: 600; 
-    height: 60px; padding-top: 10px; 
-    border-bottom: 3px solid black; */
+    display: inline-block; 
+    position: relative;
+    font-size: xx-large; 
+    font-weight: 600; 
+    padding-left: 3px; 
+    text-align: left;
+    height: 60px; 
+    padding-top: 30px; 
+    border-bottom: 3px solid black;      
 }
-.submenubox{display: inline-block;}
+.submenubox{
+    display: inline-block; 
+    position: absolute;
+    top: 48px;
+    right: 0;
+    padding-right: 3px;
+}
 .submenu{
-    display: inline-block;
-    width: 100px; height: 70px;    
+    overflow: hidden;
+    padding-top: 10px;
+    /* display: inline-block;
+    width: 100px; height: 70px;  /*  */
+    float: left;
+    padding-top: 10px;  
 }
+
+.chart {display: inline-block; padding-left: 13px; font-weight: 600; color: rgb(99, 99, 99);} 
+.weekChart {display: inline-block; padding-left: 13px; font-weight: 600; color: rgb(99, 99, 99);}
+
+
 .now {
     display: flex;
     font-size: smaller;     
@@ -63,13 +79,14 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .movie_date { /*  .date  */   
     display: flex;  
     float: left;
-    margin-bottom: 30px;    
+    margin-bottom: 10px; 
+    margin-left: 3px;   
 }
-.movie_date .date{font-size: 50px; }
+.movie_date .date{font-size: 22px; }
 
 .box-list {   
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 60px;   
     margin-left: -64px;      
     position: relative; 
@@ -100,7 +117,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     text-align: center;
     color: white;
     font-weight: 900;
-    padding-top: 2px;
+    padding-top: 5px;
     margin-bottom: 5px;
 }
 .number {
@@ -113,8 +130,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     margin-bottom: 5px;
 }
 
-.movieImg1{width: 197px; height: 285px;}
-.movieImg { width: 197px; height: 285px;}
+.movieImg1{width: 197px; height: 285px; margin-bottom: 10px;}
+.movieImg { width: 197px; height: 285px; margin-bottom: 5px;}
 .movieName {
     display: block;
     text-decoration: none; 
@@ -123,10 +140,10 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .innerBox {margin-bottom: 10px; }
-.rate{font-size: 12px;}
+.rate{font-size: 12px;margin-bottom: 6px;}
 .day{font-size: 12px; display: inline;}
 .Dday{
     font-size: smaller; 
@@ -137,7 +154,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .ticketing{
     float: left;
     width: 100px; 
-    height: 20px;
+    height: 24px;
     background-color: rgb(252, 66, 90); 
     color: white;
     text-decoration: none;
@@ -145,6 +162,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     font-size: 13px;
     font-weight: 600;    
     border-radius: 5px;
-    padding-bottom: 3px;
-    margin-top: 3px;     
+   /*  padding-bottom: 2px; */
+    margin-top: 7px;     
 }

@@ -13,7 +13,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 #container{
     width: 1000px;
-    padding: 70px 400px 100px 400px;
+    padding: 20px 400px 100px 450px;
 }
 /* #title {margin-bottom: 12px;} */
 .chart_title{
@@ -26,8 +26,10 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .title {
     display: inline-block; 
     position: relative;
-    font-size: xx-large; font-weight: 600; 
-    height: 60px; padding-top: 10px; 
+    font-size: xx-large; 
+    font-weight: 600; 
+    height: 60px; 
+    padding-top: 10px; 
     padding-left: 3px;
     text-align: left;
     /* border-bottom: 3px solid black; */
@@ -47,8 +49,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     width: 100px; height: 70px;  */   
 }
 /* .submenu .li:first-child{margin-left: 0;} */
-.chart {display: inline-block; padding-left: 13px; font-weight: 600; color: rgb(99, 99, 99);} 
-.weekChart {display: inline-block; padding-left: 13px; font-weight: 600; color: rgb(99, 99, 99);}
+.chart {display: inline-block; padding-left: 13px; font-weight: 600; color: rgb(99, 99, 99); cursor: pointer;} 
+.weekChart {display: inline-block; padding-left: 13px; font-weight: 600; color: rgb(99, 99, 99); cursor: pointer;}
 
 .now {
     font-size: smaller;     
@@ -109,7 +111,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     text-align: center;
     color: white;
     font-weight: 900;
-    padding-top: 2px;
+    padding-top: 5px;
     margin-bottom: 5px;
 }
 .number {
@@ -121,8 +123,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     padding-top: 2px;
     margin-bottom: 5px;
 }
-.movieImg1{width: 197px; height: 285px;}
-.movieImg { width: 197px; height: 285px;}
+.movieImg1 {width: 197px; height: 285px; margin-bottom: 8px;}
+.movieImg { width: 197px; height: 285px;margin-bottom: 8px;}
 .movieName {
     display: block;
     text-decoration: none; 
@@ -131,10 +133,10 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .innerBox {margin-bottom: 10px; }
-.rate{font-size: 12px;}
+.rate{font-size: 12px; margin-bottom: 5px;}
 .day{font-size: 12px; display: inline;}
 .Dday{
     font-size: smaller; 
@@ -145,7 +147,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .ticketing{
     float: left;
     width: 100px; 
-    height: 20px;
+    height: 24px; line-height: 20px;
     background-color: rgb(252, 66, 90); 
     color: white;
     text-decoration: none;
@@ -153,6 +155,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     font-size: 13px;
     font-weight: 600;    
     border-radius: 5px;
-    padding-bottom: 3px;
+    padding-bottom: 0px;
     margin-top: 3px;     
 }
