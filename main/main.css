@@ -550,6 +550,7 @@
     width: 170px;
     height: 234px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .movieChart-list .swiper-slide .img-wrap > img {
@@ -609,9 +610,7 @@
     z-index: 3;
 }
 
-.movieChart-list .swiper-wrapper .swiper-slide .img-wrap:hover .img-hover {
-    opacity: 0.4;
-}
+
 
 .img-hover .btn-movieDetail {
     color: #666;

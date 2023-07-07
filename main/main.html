@@ -18,6 +18,12 @@
 
     <!-- css -->
     <link rel="stylesheet" href="main.css">
+
+    <style>
+        a {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div id="cgv-wrap">
@@ -30,8 +36,8 @@
             <div class="header-content">
                 <div class="contents">
                     <!-- title(왼) -->
-                    <h1 onclick="">
-                        <a href="">
+                    <h1>
+                        <a onclick="location.href='/main/main.html'">
                             <img src="https://img.cgv.co.kr/R2014/images/common/logo/logoRed.png" alt="CGV">
                         </a>
                         <span>CULTUREPLEX</span>
@@ -86,10 +92,10 @@
                             </h2>
                             <dl class="nav-overmenu" style="display: none;">
                                 <dt>
-                                    <h2><a href="#">영화</a></h2>
+                                    <h2><a href="">영화</a></h2>
                                 </dt>
                                 <dd>
-                                    <h3><a href="">무비차트</a></h3>
+                                    <h3><a onclick="location.href='/MovieInfo/movie_chart.html'">무비차트</a></h3>
                                 </dd>
                                 <dd>
                                     <h3><a href="">아트하우스</a></h3>
@@ -108,7 +114,7 @@
                                     <h2><a href="#">극장</a></h2>
                                 </dt>
                                 <dd>
-                                    <h3><a href="">CGV 극장</a></h3>
+                                    <h3><a onclick="location.href='/theater/theaterguide1.html'">CGV 극장</a></h3>
                                 </dd>
                                 <dd>
                                     <h3><a href="">특별관</a></h3>
@@ -117,11 +123,11 @@
                         </li>
                         <li>
                             <h2>
-                                <a href="#"><strong>예매</strong></a>
+                                <a onclick="location.href='/Ticketings/ticketing/html'"><strong>예매</strong></a>
                             </h2>
                             <dl class="nav-overmenu" style="display: none;">
                                 <dt>
-                                    <h2><a href="#">예매</a></h2>
+                                    <h2><a onclick="location.href='/Ticketings/ticketing/html'">예매</a></h2>
                                 </dt>
                                 <dd>
                                     <h3><a href="">빠른예매</a></h3>
@@ -263,20 +269,20 @@
                     <div class="movieChart-btn-wrap">
                         <div class="tapBtn-wrap">
                             <h3>
-                                <a href="" class="active btnMovie">무비차트</a>
+                                <a class="active btnMovie">무비차트</a>
                             </h3>
                             <h3>
                                 <a href="" class="btnReserMovie">상영예정작</a>
                             </h3>
                         </div>
-                        <a href="#" class="btn-allView">전체보기</a>
+                        <a class="btn-allView" onclick="location.href='/MovieInfo/movie_chart.html'">전체보기</a>
                     </div>
                     <!-- 차트 swiper -->
                     <div class="swiper movieChart-list swiper-container-initialized swiper-container-horizontal" id="movieChart-list">
                         <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
                             <!-- 차트 1개 -->
                             <div class="swiper-slide swiper-slide-movie swiper-slide-active" style="width: 170.4px; margin-right: 32px;">
-                                <div class="img-wrap">
+                                <div class="img-wrap" onclick="location.href='/MovieInfo/movie_info.html'">
                                     <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000087/87154/87154_320.jpg" alt="미션 임파서블-데드 레코닝 PART ONE">
                                     <div class="img-hover" >
                                         <a href="#" class="btn-movieDetail">상세보기</a>
@@ -290,7 +296,7 @@
                             </div>
                             <!-- // -->
                             <div class="swiper-slide swiper-slide-movie swiper-slide-active" style="width: 170.4px; margin-right: 32px;">
-                                <div class="img-wrap">
+                                <div class="img-wrap" onclick="location.href='/MovieInfo/movie_info2.html'">
                                     <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000087/87034/87034_320.jpg" alt="엘리멘탈">
                                     <div class="img-hover" >
                                         <a href="#" class="btn-movieDetail">상세보기</a>
@@ -303,7 +309,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide swiper-slide-movie swiper-slide-active" style="width: 170.4px; margin-right: 32px;">
-                                <div class="img-wrap">
+                                <div class="img-wrap" onclick="location.href='/MovieInfo/movie_info3.html'">
                                     <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000087/87106/87106_320.jpg" alt="스파이더맨-어크로스 더 유니버스">
                                     <div class="img-hover" >
                                         <a href="#" class="btn-movieDetail">상세보기</a>
@@ -590,7 +596,7 @@
         </div>
 
         <div class="fixedBtn-wrap">
-            <a href="#" class="btn-fixedTicketing">예매하기</a>
+            <a class="btn-fixedTicketing" onclick="location.href='/Ticketings/ticketing.html'">예매하기</a>
             <a href="#none" class="btn-gotoTop">
                 <img src="https://img.cgv.co.kr/R2014/images/common/btn/gotoTop.png" alt="최상단으로 이동">
             </a>

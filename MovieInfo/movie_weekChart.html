@@ -6,13 +6,233 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="movie_chart.css">
+    <link rel="stylesheet" href="/main/header.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 
 </head>
-<body>    
+<body>
+    
+    <div id="cgv-wrap">
+        <div class="header">
+            <!-- header title -->
+            <div class="header-content">
+                <div class="contents">
+                    <!-- title(왼) -->
+                    <h1>
+                        <a onclick="location.href='/main/main.html'">
+                            <img src="https://img.cgv.co.kr/R2014/images/common/logo/logoRed.png" alt="CGV">
+                        </a>
+                        <span>CULTUREPLEX</span>
+                    </h1>
+                    <!-- member-info(오) -->
+                    <ul class="memberinfo-wrap">
+                        <div class="ad-partner">
+                            <a href="#">
+                                <img src="https://img.cgv.co.kr/WingBanner/2023/0208/16758461047540.png" alt="현대M포인트">
+                            </a>
+                        </div>
+                        <li>
+                            <a href="#">
+                                <img src="https://img.cgv.co.kr/R2014/images/common/ico/loginPassword.png" alt="로그인">
+                                <span>로그인</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://img.cgv.co.kr/R2014/images/common/ico/loginJoin.png" alt="로그인">
+                                <span>회원가입</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://img.cgv.co.kr/R2014/images/common/ico/loginMember.png" alt="로그인">
+                                <span>MY CGV</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="https://img.cgv.co.kr/R2014/images/common/ico/loginCustomer.png" alt="로그인">
+                                <span>고객센터</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nav -->
+            <div class="nav" style="left: 0px;">
+                <div class="contents">
+                    <!-- h1: fixed에서 맨앞 로고 띄우는 용도 -->
+                    <h1>
+                        <a href="#">
+                            <img src="https://img.cgv.co.kr/R2014/images/common/logo/logoWhite.png" alt="CGV">
+                        </a>
+                    </h1>
+                    <ul class="nav-menu">
+                        <li>
+                            <h2>
+                                <a href="#">영화</a>
+                            </h2>
+                            <dl class="nav-overmenu" style="display: none;">
+                                <dt>
+                                    <h2><a href="#">영화</a></h2>
+                                </dt>
+                                <dd>
+                                    <h3><a href="">무비차트</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">아트하우스</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">ICECON</a></h3>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#">극장</a>
+                            </h2>
+                            <dl class="nav-overmenu" style="display: none;">
+                                <dt>
+                                    <h2><a href="#">극장</a></h2>
+                                </dt>
+                                <dd>
+                                    <h3><a href="">CGV 극장</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">특별관</a></h3>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#"><strong>예매</strong></a>
+                            </h2>
+                            <dl class="nav-overmenu" style="display: none;">
+                                <dt>
+                                    <h2><a href="#">예매</a></h2>
+                                </dt>
+                                <dd>
+                                    <h3><a href="">빠른예매</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">상영스케줄</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">English Ticketing</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">English Schedule</a></h3>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#">스토어</a>
+                            </h2>
+                            <dl class="nav-overmenu" style="display: none;">
+                                <dt>
+                                    <h2><a href="#">스토어</a></h2>
+                                </dt>
+                                <dd>
+                                    <h3><a href="">패키지</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">영화관람권</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">기프트카드</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">콤보</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">팝콘</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">음료</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">스낵</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">플레이존</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">씨네샵</a></h3>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#">이벤트</a>
+                            </h2>
+                            <dl class="nav-overmenu" style="display: none;">
+                                <dt>
+                                    <h2><a href="#">이벤트</a></h2>
+                                </dt>
+                                <dd>
+                                    <h3><a href="">SPECIAL</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">영화/예매</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">멤버십/CLUB</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">CGV 극장별</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">제휴할인</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">당첨자 발표</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">종료된 이벤트</a></h3>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h2>
+                                <a href="#">혜택</a>
+                            </h2>
+                            <dl class="nav-overmenu" style="display: none;">
+                                <dt>
+                                    <h2><a href="#">혜택</a></h2>
+                                </dt>
+                                <dd>
+                                    <h3><a href="">CGV 할인정보</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">CLUB 서비스</a></h3>
+                                </dd>
+                                <dd>
+                                    <h3><a href="">VIP 라운지</a></h3>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="totalsearch-wrap">
+                        <label>
+                            <input type="text" id="header_keyword" value>
+                        </label>
+                        <button type="button" class="btn-totalsearch" id="btn_header_search">검색</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fixedBtn-wrap">
+            <a href="#" class="btn-fixedTicketing">예매하기</a>
+            <a href="#none" class="btn-gotoTop">
+                <img src="https://img.cgv.co.kr/R2014/images/common/btn/gotoTop.png" alt="최상단으로 이동">
+            </a>
+        </div>
+    </div>
 
     <div id="container"><!-- 무비차트 큰 박스 -->
 
@@ -186,5 +406,41 @@
 
     </div>
 
+    <div id="cgv-wrap">
+        <footer>
+            <div class="bottom-wrap"></div>
+            <ul class="policy-list">
+                <li><a href="">회사소개</a></li>
+                <li><a href="">지속가능경영</a></li>
+                <li><a href="">IR</a></li>
+                <li><a href="">채용정보</a></li>
+                <li><a href="">광고/제휴/출점문의</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">편성기준</a></li>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">이메일주소무단수집거부</a></li>
+                <li><a href="">윤리경영</a></li>
+                <li><a href="">사이버감사실</a></li>
+            </ul>
+            <article class="company-info-wrap">
+                <section class="company-info">
+                    <address>서울 강남구 테헤란로 7길 7(역삼동 에스코빌딩 6층)</address>
+                    <dl class="company-info-list">
+                        <dt>조장</dt>
+                        <dd>이 진</dd>
+                        <dt>조장</dt>
+                        <dd>배재욱</dd>
+                        <dt>조조장</dt>
+                        <dd>유현주</dd>
+                        <dt>조조장</dt>
+                        <dd>이혜원</dd>
+                    </dl>
+                    <p class="copyright">© CJ CGV. All Rights Reserved</p>
+                </section>
+            </article>
+        </footer>
+    </div>
+
+    <script src="/main/main.js"></script>
 </body>
 </html>
