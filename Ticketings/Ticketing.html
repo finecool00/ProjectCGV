@@ -27,8 +27,8 @@
             <div class="header-content">
                 <div class="contents">
                     <!-- title(왼) -->
-                    <h1 onclick="">
-                        <a href="">
+                    <h1>
+                        <a onclick="location.href='/main/main.html'">
                             <img src="https://img.cgv.co.kr/R2014/images/common/logo/logoRed.png" alt="CGV">
                         </a>
                         <span>CULTUREPLEX</span>
@@ -83,10 +83,10 @@
                             </h2>
                             <dl class="nav-overmenu" style="display: none;">
                                 <dt>
-                                    <h2><a href="#">영화</a></h2>
+                                    <h2><a href="">영화</a></h2>
                                 </dt>
                                 <dd>
-                                    <h3><a href="">무비차트</a></h3>
+                                    <h3><a onclick="location.href='/MovieInfo/movie_chart.html'">무비차트</a></h3>
                                 </dd>
                                 <dd>
                                     <h3><a href="">아트하우스</a></h3>
@@ -105,7 +105,7 @@
                                     <h2><a href="#">극장</a></h2>
                                 </dt>
                                 <dd>
-                                    <h3><a href="">CGV 극장</a></h3>
+                                    <h3><a onclick="location.href='/theater/theaterguide1.html'">CGV 극장</a></h3>
                                 </dd>
                                 <dd>
                                     <h3><a href="">특별관</a></h3>
@@ -114,11 +114,11 @@
                         </li>
                         <li>
                             <h2>
-                                <a href="#"><strong>예매</strong></a>
+                                <a onclick="location.href='/Ticketings/ticketing/html'"><strong>예매</strong></a>
                             </h2>
                             <dl class="nav-overmenu" style="display: none;">
                                 <dt>
-                                    <h2><a href="#">예매</a></h2>
+                                    <h2><a onclick="location.href='/Ticketings/ticketing/html'">예매</a></h2>
                                 </dt>
                                 <dd>
                                     <h3><a href="">빠른예매</a></h3>
@@ -231,8 +231,9 @@
                 </div>
             </div>
         </div>
+    
         <div class="fixedBtn-wrap">
-            <a href="#" class="btn-fixedTicketing">예매하기</a>
+            <a class="btn-fixedTicketing" onclick="location.href='/Ticketings/ticketing.html'">예매하기</a>
             <a href="#none" class="btn-gotoTop">
                 <img src="https://img.cgv.co.kr/R2014/images/common/btn/gotoTop.png" alt="최상단으로 이동">
             </a>
@@ -248,7 +249,7 @@
         </div>
     
         <!-- main_menu -->
-        <div class="main_box11">
+        <div class="main_box">
             <div class="movieList">
                 <div class="movie_head">
                     <p>영화</p>
@@ -652,9 +653,9 @@
         <!-- 하단 배너 -->
         <div class="swiper">
             <div class="swiper-wrapper">
-                <img class="swiper-slide" src="/Ticketings/img/banner01.jpg" alt="하단배너이미지">
-                <img class="swiper-slide" src="/Ticketings/img/banner02.jpg" alt="하단배너이미지">
-                <img class="swiper-slide" src="/Ticketings/img/banner03.jpg" alt="하단배너이미지">
+                <img class="swiper-slide" src="/Ticketings/img/banner01.jpg">
+                <img class="swiper-slide" src="/Ticketings/img/banner02.jpg">
+                <img class="swiper-slide" src="/Ticketings/img/banner03.jpg">
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -673,6 +674,47 @@
             });
         </script>
     </div>
+
+<!-- footer -->
+<div id="cgv-wrap">
+
+    <footer>
+        <div class="bottom-wrap"></div>
+        <ul class="policy-list">
+            <li><a href="">회사소개</a></li>
+            <li><a href="">지속가능경영</a></li>
+            <li><a href="">IR</a></li>
+            <li><a href="">채용정보</a></li>
+            <li><a href="">광고/제휴/출점문의</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">편성기준</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">이메일주소무단수집거부</a></li>
+            <li><a href="">윤리경영</a></li>
+            <li><a href="">사이버감사실</a></li>
+        </ul>
+        <article class="company-info-wrap">
+            <section class="company-info">
+                <address>서울 강남구 테헤란로 7길 7(역삼동 에스코빌딩 6층)</address>
+                <dl class="company-info-list">
+                    <dt>조장</dt>
+                    <dd>이 진</dd>
+                    <dt>조장</dt>
+                    <dd>배재욱</dd>
+                    <dt>조조장</dt>
+                    <dd>유현주</dd>
+                    <dt>조조장</dt>
+                    <dd>이혜원</dd>
+                </dl>
+                <p class="copyright">© CJ CGV. All Rights Reserved</p>
+            </section>
+        </article>
+    </footer>
+
+
+</div>
+
+
 
 <!-- js -->
 <script src="/Ticketings/Ticketing.js"></script>
