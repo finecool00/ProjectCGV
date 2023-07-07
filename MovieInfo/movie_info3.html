@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="movie_info.css">
+
+    <link rel="stylesheet" href="swiper.css">
+    <script src="swiper.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div id="container"><!-- 영화 정보창 큰 박스 -->
+
+        <div><!-- 상단 영화정보 박스 -->
+            <div class="box_left"><!-- 영화 이미지 -->
+                <img src="img/spiderman.jpg" class="movie_img">
+            </div>
+
+            <div class="box_right">
+                <div class="box-title">
+                    <div class="movie_title"><!-- 영화 제목 -->
+                        <p class="movieName">스파이더맨-어크로스 더 유니버스 </p>
+                        <div class="nowShow">현재상영중</div>                          
+                        <p class="subName">Spider-Man: Across the Spider-Verse</p>
+                    </div>
+                    <div class="m_rate"><!-- 예매율 정보 -->
+                        <p>예매율 12.4% </p>
+                    </div>
+                </div>
+                <div class="box_bot">
+                    <div class="m_info3"><!-- 영화 간략한 정보 -->
+                        <p>감독 : 조아킴 도스 샌토스 ,  켐프 파워 ,  저스틴 톰슨 / 배우 : 
+                            샤메익 무어 ,  헤일리 스타인펠드 ,  브라이언 타이리 헨리 ,  로렌 벨레즈 ,  제이크 존슨 ,  제이슨 슈왈츠먼 ,  잇사 레이 ,  카란 소니 ,  다니엘 칼루야 ,  오스카 아이삭 ,  레이첼 드래취</p>
+                        <p>장르 : 애니메이션 / 기본 정보 :  전체관람가, 140분, 미국</p>
+                        <p>개봉 : 2023.06.21</p>
+                    </div>                    
+                    <div class="ticketingBox"><!-- 예매하기 버튼 -->
+                        <a href="#" id="freeEgg">프리에그</a>
+                        <a href="#" class="ticketing">예매하기</a>                        
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div><!-- 영화 관련 링크 메뉴 -->
+            <div class="m_menu">
+                <ul class="menu">
+                    <li><a href="#"></a>☞ &nbsp; 주요정보</li>
+                    <li><a href="#"></a>트레일러</li>
+                    <li><a href="#"></a>스틸컷</li>
+                    <li><a href="#"></a>평점/리뷰</li>
+                    <li><a href="#"></a>상영시간표</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="synopsis"><!-- 시놉시스 -->
+            <p>스파이더맨 VS 스파이더맨?!</p> <br/>
+            <p>여러 성장통을 겪으며 새로운 스파이더맨이 된 ‘마일스 모랄레스’.</p>
+            <p>그 앞에 다른 평행세계의 스파이더우먼 ‘그웬’이 다시 나타난다.</p>
+            <br/>
+            <p>모든 차원의 멀티버스 속 스파이더맨들을 만나게 되지만,</p>
+            <p>질서에 대한 신념이 부딪히며 예상치 못한 균열이 생기는데…</p> <br/>
+            <p>상상 그 이상을 넘어서는 멀티버스의 세계가 열린다!</p>           
+        </div>
+
+       
+        <div class="graphBox"><!-- 그래프 박스 -->
+
+            <img src="img/graph3.jpg">
+  
+        </div>
+
+        <div class="trailer_box"><!-- 트레일러 큰 박스-->
+
+            <div class="trailer"><!-- 타이틀 -->
+                <p class="trailer_title">트레일러</p>
+            </div>
+
+            <div class="trailer_video"><!-- 트레일러 영상 -->
+                <ul class="videoList">
+                    <div class="video">
+                        <li><img src="img/st1.jpg" class="thumbnail"></li>
+                        <li class="vName">앰배서더 '더보이즈' 추천 영상</li>
+                        <li class="date">2023.06.23</li>                        
+                    </div>
+                    <div class="video">
+                        <li><img src="img/st2.jpg" class="thumbnail"></li>
+                        <li class="vName"> Real 관객 추천 영상</li>
+                        <li class="date">2023.06.20</li>
+                    </div>
+                    <div class="video">
+                        <li><img src="img/st3.jpg" class="thumbnail"></li>
+                        <li class="vName"> 인터내셔널 예고편</li>
+                        <li class="date">2023.06.01</li>
+                    </div>
+                </ul>                
+            </div>
+            <div class="trailerName"><!-- 영상 제목 -->
+
+            </div>
+        </div>
+
+        <!-- 임시로 줄 띄운 것 -->
+        <br><br>
+
+        <div class="photo_box"><!-- 스틸컷 큰 박스 -->
+
+            <div class="photo_title"><!-- 스틸컷 타이틀 -->
+                <p class="title">스틸컷</p>
+            </div>
+
+            <div class="swiperBox"><!-- 스틸컷 이미지 - Swiper -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="photo swiper-slide"><img src="img/s1.jpg" class="stillImg"></div>
+                        <div class="photo swiper-slide"><img src="img/s2.jpg" class="stillImg"></div>
+                        <div class="photo swiper-slide"><img src="img/s3.jpg" class="stillImg"></div>                        
+                        <div class="photo swiper-slide"><img src="img/s4.jpg" class="stillImg"></div> 
+                        <div class="photo swiper-slide"><img src="img/s5.jpg" class="stillImg"></div> 
+                    </div>
+                             
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>            
+                </div>
+
+                <script>
+                    //스와이퍼
+                    const swiper = new Swiper('.swiper', {
+            
+                        // Optional parameters
+                        direction: 'horizontal',
+                        loop: true,                        
+                        autoplay: { //자동재생
+                        delay: 5000,
+                        },                                             
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },  
+                    });            
+                </script>  
+                   
+            </div>
+       
+        </div> <!-- 스틸컷 end -->
+
+        <!-- 임시로 줄 띄운 것 -->
+        <br><br>
+
+        <div class="contentData"><!-- 관람 포인트 -->
+            <div class="content_title"><!-- 타이틀 -->
+                <p class="title">영상미가 뛰어나고</p>
+                <p class="title">상상력을 자극하는 영화</p>
+            </div>
+           
+            
+        </div>            
+     
+        <div class="pointBox"><!-- 그래프 박스 -->
+
+          <img src="img/graph4.jpg">
+
+        </div>
+
+        <div class="reviewtitle">
+            <h3>실관람평</h3>
+        </div>   
+        
+        
+        <div class="reviewBox">
+           
+            <div class="reviewList">
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/kirby.png" class="profileImg">
+                    </li>
+                    <li class="content">
+                        상영관에서 내려가기 전에 <br>
+                        꼭 봐야 하는 애니메이션 영화
+                        <p class="star">★★★★★</p>
+                    </li>
+                </ul>
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/yuri.jpg" class="profileImg">
+                    </li>
+                    <li class="content">
+                        두 번 봐도 재밌다... <br>
+                        큰 화면으로 보니까 몰입감 미쳐요...
+                        <p class="star">★★★★</p>
+                    </li>
+                </ul>
+                <ul class="review">
+                    <dliiv class="profile">
+                        <img src="img/gom.jpg" class="profileImg">
+                    </li>
+                    <li class="content">
+                        최고의 영화...화려함 그 자체.<br>
+                        두 시간이 쏜살같이 지나감 
+                        <p class="star">★★★★</p>                       
+                    </li>
+                </ul>
+            </div>
+
+            <div class="reviewList">
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/반다나_웨이들_디.png" class="profileImg">
+                    </li>
+                    <li class="content">
+                        기대보다 훨씬재밌다!! 무조건 4D..! <br> 
+                        최고다 다음 편 마려워요
+                        <p class="star">★★★★</p>
+                    </li>
+                </ul>
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/GGo.jpg" class="profileImg">
+                    </li>
+                    <li class="content">
+                        세계관부터 디테일까지 덕후 울림 <br>
+                        어벤져스빼곤 다 관심도 안갔는데 사랑한다 마블
+                        <p class="star">★★★★★</p>
+                    </li>
+                </ul>
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/zzangGoo.png" class="profileImg">
+                    </li>
+                    <li class="content">
+                        머글 친구 데려갔는데도 성공적 ㅠ<br>
+                        
+                        <p class="star">★★★★★</p>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+    </div>
+
+
+
+    <script>
+                   
+            var freeEgg = document.getElementById("freeEgg");          
+
+            freeEgg.onclick = function() {
+                
+                freeEgg.style.backgroundColor='#ffedec';
+                freeEgg.style.border = '2px solid #FFBDBD';
+                freeEgg.innerHTML = '&nbsp; &nbsp; &nbsp; ♥';          
+                freeEgg.style.color = '#FAAAAA';
+                window.open('freeEgg3.html', 'freeEgg', 'width=450px, height=330px, left = 300px, top = 300px');
+
+            }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="movie_info.css">
+
+    <link rel="stylesheet" href="swiper.css">
+    <script src="swiper.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div id="container"><!-- 영화 정보창 큰 박스 -->
+
+        <div><!-- 상단 영화정보 박스 -->
+            <div class="box_left"><!-- 영화 이미지 -->
+                <img src="img/no1.jpg" class="movie_img">
+            </div>
+
+            <div class="box_right">
+                <div class="box-title">
+                    <div class="movie_title"><!-- 영화 제목 -->
+                        <p class="movieName">미션 임파서블-데드 레코닝 PART ONE</p>
+                        <div class="waitToOpen">예매중</div>
+                        <div class="D-day">D-5</div>
+                        <p class="subName">Mission: Impossible - Dead Reckoning Part One</p>
+                    </div>
+                    <div class="m_rate"><!-- 예매율 정보 -->
+                        <p>예매율 33.0% </p>
+                    </div>
+                </div>
+                <div class="box_bot">
+                    <div class="m_info"><!-- 영화 간략한 정보 -->
+                        <p>감독 : 크리스토퍼 맥쿼리 / 배우 : 톰 크루즈 ,  헤일리 앳웰 ,  빙 레임스 ,  사이먼 페그 ,  레베카 퍼거슨 ,  바네사 커비 ,  이사이 모랄레스 ,  폼 클레멘티에프</p>
+                        <p>장르 : 액션, 어드벤처, 스릴러 / 기본 정보 : 15세이상관람가, 163분, 미국</p>
+                        <p>개봉 : 2023.07.12</p>
+                    </div>                    
+                    <div class="ticketingBox"><!-- 예매하기 버튼 -->
+                        <a href="#" id="freeEgg">프리에그</a>
+                        <a href="#" class="ticketing">예매하기</a>                        
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div><!-- 영화 관련 링크 메뉴 -->
+            <div class="m_menu">
+                <ul class="menu">
+                    <li><a href="#"></a>☞ &nbsp; 주요정보</li>
+                    <li><a href="#"></a>트레일러</li>
+                    <li><a href="#"></a>스틸컷</li>
+                    <li><a href="#"></a>평점/리뷰</li>
+                    <li><a href="#"></a>상영시간표</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="synopsis"><!-- 시놉시스 -->
+            <p>가장 위험한 작전, 그의 마지막 선택</p>
+            <p>모든 인류를 위협할 새로운 무기를 추적하게 된 에단 헌트(톰 크루즈)와 IMF팀은</p>
+            <p>이 무기가 인류의 미래를 통제할 수 있다는 사실을 알게 된다.</p>
+            <br/>
+            <p>전 세계가 위태로운 상황에 처한 가운데, 이를 추적하던 에단 헌트에게 어둠의 세력까지 접근하고</p>
+            <p>마침내 미스터리하고 강력한 빌런과 마주하게 된 그는</p>
+            <p>가장 위험한 작전을 앞두고 자신이 아끼는 사람들의 생명과 중요한 임무 사이에서</p>
+            <p>선택을 해야 하는 상황에 놓이게 되는데…</p>
+        </div>
+
+       
+        <div class="graphBox"><!-- 그래프 박스 -->
+
+            <img src="img/graph1.jpg">
+  
+        </div>
+
+        <div class="trailer_box"><!-- 트레일러 큰 박스-->
+
+            <div class="trailer"><!-- 타이틀 -->
+                <p class="trailer_title">트레일러</p>
+            </div>
+
+            <div class="trailer_video"><!-- 트레일러 영상 -->
+                <ul class="videoList">
+                    <div class="video">
+                        <li><img src="img/t1.jpg" class="thumbnail"></li>
+                        <li class="vName">로마 카체이싱 비하인드 영상</li>
+                        <li class="date">2023.06.26</li>                        
+                    </div>
+                    <div class="video">
+                        <li><img src="img/t2.jpg" class="thumbnail"></li>
+                        <li class="vName">9분 풀타임 액션 영상</li>
+                        <li class="date">2023.06.26</li>
+                    </div>
+                    <div class="video">
+                        <li><img src="img/t3.jpg" class="thumbnail"></li>
+                        <li class="vName">티저 예고편</li>
+                        <li class="date">2023.06.26</li>
+                    </div>
+                </ul>                
+            </div>
+            <div class="trailerName"><!-- 영상 제목 -->
+
+            </div>
+        </div>
+
+        <!-- 임시로 줄 띄운 것 -->
+        <br><br>
+
+        <div class="photo_box"><!-- 스틸컷 큰 박스 -->
+
+            <div class="photo_title"><!-- 스틸컷 타이틀 -->
+                <p class="title">스틸컷</p>
+            </div>
+
+            <div class="swiperBox"><!-- 스틸컷 이미지 - Swiper -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="photo swiper-slide"><img src="img/1.jpg" class="stillImg"></div>
+                        <div class="photo swiper-slide"><img src="img/2.jpg" class="stillImg"></div>
+                        <div class="photo swiper-slide"><img src="img/3.jpg" class="stillImg"></div>                        
+                        <div class="photo swiper-slide"><img src="img/4.jpg" class="stillImg"></div> 
+                        <!-- <div class="photo swiper-slide"><img src="img/5.jpg" class="stillImg"></div>  -->
+                    </div>
+                             
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>            
+                </div>
+
+                <script>
+                    //스와이퍼
+                    const swiper = new Swiper('.swiper', {
+            
+                        // Optional parameters
+                        direction: 'horizontal',
+                        loop: true,                        
+                        autoplay: { //자동재생
+                        delay: 5000,
+                        },                                             
+                        // Navigation arrows
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },  
+                    });            
+                </script>  
+                   
+            </div>
+       
+        </div> <!-- 스틸컷 end -->
+
+        <!-- 임시로 줄 띄운 것 -->
+        <br><br>
+
+        <div class="contentData"><!-- 관람 포인트 -->
+            <div class="content_title"><!-- 타이틀 -->
+                <p class="title">첩보 장르의 서스펜스와 메소드급 배우들의 연기로</p>
+                <p class="title">액션 장르에 몰입해서 보게 만드는 영화</p>
+            </div>
+           
+            
+        </div>            
+     
+        <div class="pointBox"><!-- 그래프 박스 -->
+
+          <img src="img/mission1.jpg">
+
+        </div>
+
+        <div class="reviewtitle">
+            <h3>실관람평</h3>
+        </div>   
+        
+        
+        <div class="reviewBox">
+           
+            <div class="reviewList">
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/kirby.png" class="profileImg">
+                    </li>
+                    <li class="content">
+                        역시 4DX 최고! 박진감이 엄청나요!<br>
+                        무조건 4D로 보는 걸 추천합니다
+                        <p class="star">★★★★★</p>
+                    </li>
+                </ul>
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/yuri.jpg" class="profileImg">
+                    </li>
+                    <li class="content">
+                        시리즈중 최고로 화려했어요!!!!!<br>
+                        다음엔 더 멋진 빌런들이 나오길 기대합니다!
+                        <p class="star">★★★★</p>
+                    </li>
+                </ul>
+                <ul class="review">
+                    <dliiv class="profile">
+                        <img src="img/gom.jpg" class="profileImg">
+                    </li>
+                    <li class="content">
+                        역시 믿고보는영화죠 cg는 절대 미국 못따라가요ㅜ <br>
+                        최고의 블록버스터 영화
+                        <p class="star">★★★★</p>                       
+                    </li>
+                </ul>
+            </div>
+
+            <div class="reviewList">
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/반다나_웨이들_디.png" class="profileImg">
+                    </li>
+                    <li class="content">
+                        미션임파서블의 모든 영화가 그렇듯이<br> 
+                        짜임새 있는 전개에 매순간 몰입할 수 있게하는 영화
+                        <p class="star">★★★★</p>
+                    </li>
+                </ul>
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/GGo.jpg" class="profileImg">
+                    </li>
+                    <li class="content">
+                        시원시원한 액션. <br>
+                        스토리도 재밌어요.
+                        <p class="star">★★★★★</p>
+                    </li>
+                </ul>
+                <ul class="review">
+                    <li class="profile">
+                        <img src="img/zzangGoo.png" class="profileImg">
+                    </li>
+                    <li class="content">
+                        다음 시리즈를 기대하게 만드는 영화!<br>
+                        한계는 없다!
+                        <p class="star">★★★★★</p>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+    </div>
+
+
+
+    <script>
+                   
+            var freeEgg = document.getElementById("freeEgg");          
+
+            freeEgg.onclick = function() {
+               
+                freeEgg.style.backgroundColor='#ffedec';
+                freeEgg.style.border = '2px solid #FFBDBD';
+                freeEgg.innerHTML = '&nbsp; &nbsp; &nbsp; ♥';          
+                freeEgg.style.color = '#FAAAAA';
+                window.open('freeEgg1.html', 'freeEgg', 'width=450px, height=330px, left = 300px, top = 300px');
+
+            }
+
+
+
+            // function change() {            
+            // var freeEgg = document.getElementById("freeEgg");          
+
+            //     freeEgg.addEventListener('click', function() {
+                    
+            //         if(freeEgg.innerText === '프리에그') {
+            //             freeEgg.style.backgroundColor='#ffedec';
+            //             freeEgg.style.border = '2px solid #E1B2B2';
+            //             freeEgg.innerText = '&nbsp; &nbsp; &nbsp; ♥';          
+            //             freeEgg.innerText.style.color =  '#E1B2B2';
+            //         } else {
+            //             freeEgg.innerText = '프리에그';
+
+            //         }                
+            // });
+           
+            
+        
+    </script>
+
+</body>
+</html>
