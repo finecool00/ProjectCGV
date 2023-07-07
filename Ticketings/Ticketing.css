@@ -18,7 +18,7 @@ ul, li {list-style: none;}
 /* body영역 */
 
 .ticketings {
-    
+    margin-left: 410px;
 }
 
 .reserv_top_menu {
@@ -27,12 +27,12 @@ ul, li {list-style: none;}
     overflow: hidden;
 }
 
-#re_booking {
+.re_booking {
     margin: 0;
     float: right;
 }
 
-#main_box {
+.main_box11 {
     /* border: 1px solid #777; */
     display: flex;
     justify-content: space-between;
@@ -251,14 +251,14 @@ ul, li {list-style: none;}
 
 
 /* 선택 영화 정보 */
-#result_menu {
+.result_menu {
     border: 1px solid #777;
     width: 1000px;
     height: auto; /* 바꾸려면 바꿀 것 */
     background-color: #555;
     color: #fff;
 }
-#result_menu > .result_menu_box > .complete_booking > a {
+.result_menu > .result_menu_box > .complete_booking > a {
     color: #fff;
 }
 
@@ -311,7 +311,7 @@ ul, li {list-style: none;}
 
 /* 좌석 정보 */
 
-#seat_menu {
+.seat_menu {
     border: 1px solid #777;
     width: 1000px;
 }
@@ -620,7 +620,10 @@ ul, li {list-style: none;}
 .swiper {
     width: 600px;
     height: 300px;
+    padding-right: 450px;
 }
+
+
 
 .swiper .swiper-wrapper img {
     height: 100px;

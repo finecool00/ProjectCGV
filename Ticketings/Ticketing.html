@@ -16,7 +16,7 @@
     
     <link rel="stylesheet" href="/Ticketings/Ticketing.css">
     <!-- css -->
-    <link rel="stylesheet" href="/main/main.css">
+    <link rel="stylesheet" href="/main/header.css">
     
 </head>
 <body>
@@ -244,11 +244,11 @@
     <div class="ticketings">
         <!-- top_menu -->
         <div class="reserv_top_menu">
-            <button type="reset" id="re_booking" onclick="history.go(0)">다시 예매하기</button>
+            <button type="reset" class="re_booking" onclick="history.go(0)">다시 예매하기</button>
         </div>
     
         <!-- main_menu -->
-        <div id="main_box">
+        <div class="main_box11">
             <div class="movieList">
                 <div class="movie_head">
                     <p>영화</p>
@@ -436,7 +436,7 @@
         </div>
     
         <!-- js 영역 고민해볼 것!!!! -->
-        <div id="result_menu">
+        <div class="result_menu">
             <div class="result_menu_box">
                 <div class="movie_info">
                     <img src="" class="movie_info_img">
@@ -456,7 +456,7 @@
         </div>
     
         <!-- 좌석 선택 -->
-        <div id="seat_menu">
+        <div class="seat_menu">
             <div class="seat_menu_title">
                 <p>인원 / 좌석</p>
             </div>
@@ -658,8 +658,6 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-    
-        /* 하단 배너 스와이퍼 */
     
         <script>
             const swiper = new Swiper('.swiper', {
