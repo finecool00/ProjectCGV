@@ -1,0 +1,461 @@
+/* @font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+}
+
+body{font-family: 'Noto Sans KR', sans-serif;} */
+
+*{padding: 0; margin: 0;}
+ul, li {list-style: none;} 
+*{margin: 0 auto;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+#contents{
+    clear: both;
+    padding-bottom: 50px;
+}
+
+#cgvwrap .cgv-ad-wrap .sect-head-ad, .head, .im-wrap, #contents, .foot, .sect-smuse, .sect-cinfo{
+    position: relative;    
+    width: 980px;
+    margin: 0 auto;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    word-break: break-all;
+}
+
+body, input, textarea, select, button, table {
+    font-size: 13px;
+    line-height: 1.2;
+    color: #666;
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    line-height: 1;
+    color: black;
+}
+
+.skipnaiv a {
+    position: absolute;
+    top: -1000em;
+    left: 10px;
+    z-index: 1000;
+    padding: 10px;
+    background-color: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#cgvwrap {
+    position: relative;
+    width: 100%;
+    min-width: 1040px;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    z-index: 7;
+}
+
+
+.sect-common, .cols-movie {
+    overflow: hidden;
+    width: 980px;
+}
+
+
+.input, .select, .img {
+    vertical-align: middle;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+dl:after, ul:after, ol:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.sect-service > .util li > a, .sect-service > .gnb li > a, .sect-service a.showtimes, .im-wrap .lnb > ul > li > a, .im-wrap > h2 > a, .im-wrap .ad-partner > a, .sect-booking > a, .sect-phototicket > a, .sect-person li > a, .sect-common li > a, .ciols-movie li > a, .sect-smuse li > a, .policy li a, .sect-cinfo .share a, .sect-bcrumb li > a, .sect-ad-external > a, .cols-banner .col-hd > a, .sect-showtimes .info-timetable a, .sect-aside-banner .aside-content-btm > a, .sect-aside-banner > .btn-top > a {
+    display: block;
+}
+
+.sect-commom{
+    height: 450px;
+    margin-top: 25px;
+}
+
+.sect-city {
+    height: 44px;
+    border-top: 3px solid #241D1E;
+    line-height: 44px;
+}
+
+.sect-city li.on > a, .sect-city li > a:focus {
+    color: #333;
+    background: url(https://img.cgv.co.kr/r2014/images/common/ico/ico_arrow02.png)
+                no-repeat 50% 100%;
+}
+
+.sect-city li {
+    float: left;
+    margin: 0 8px;
+}
+
+.sect-city li.on > a {
+    padding: 0 16px;
+    color: #666;
+    font-size: 13px;
+}
+
+.sect-city li > a, .sect-schedule li > .day a, .descri-info > ul > li > a {
+    display: block;
+}
+
+.showtimes-wrap .early, .showtimes-wrap .midnight, .showtimes-wrap .ico_script, .sect-city li > a, .descri-info li > a, .sect-showtimes .col-theater {
+    font-weight: 500;
+}
+
+.favorite-wrap {
+    position: relative;
+    width: 874px;
+    height: 400px;
+    padding: 60px 53px 0;
+    background: url(https://img.cgv.co.kr/r2014/images/common/bg/bg_showtimes_favorite.gif) 
+                no-repeat 0 0;
+}
+
+.favorite-wrap .sect-favorite{
+    position: relative;
+    width: 676px;
+    height: 49px;
+    padding-left: 198px;
+
+}
+
+.favorite-wrap .sect-favorite h4 {
+    position: absolute;
+    top: 14px;
+    left: 33px;
+    padding: 0;
+    font: 0/0 a;
+    zoom: 1;
+}
+
+.favorite-wrap .sect-city ul > li.on > a, .favorite-wrap .sect-city ul > li a:hover, .favorite-wrap .sect-city ul > li a:focus {
+    color: #fff !important;
+}
+
+.favorite-wrap .sect-city{
+    height: 42px;
+    margin-top: 18px;
+    border-top: 2px solid #727171;
+    border-bottom: 2px solid #727171;
+}
+
+.favorite-wrap .sect-city > ul {
+    position: relative;
+}
+
+.favorite-wrap .sect-city ul > li > a {
+    padding: 0 19px;
+    color: #dbdbdb;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.favorite-wrap .sect-city > ul .area {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 854px;
+}
+
+.favorite-wrap .sect-city > ul > li.on .area {
+    display: block;
+}
+
+.favorite-wrap .sect-city > ul > li * li {
+    margin: 6px 25px 0 0;
+}
+
+.favorite-wrap .sect-city > ul > li * li > a {
+    position: relative;
+    padding: 0;
+    font-size: 12px;
+    color: #b9b9b9;
+    line-height: 31px;
+    text-align: left;
+}
+
+.favorite-wrap .sect-city > ul > li * li:not(:last-child) > a::before {
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #b9b9b9;
+    position: absolute;
+    right: -13px;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.favorite-wrap .sect-city > ul > li * li.on > a, .favorite-wrap .sect-city > ul > li * li.on > a:hover, .favorite-wrap .sect-city > ul > li * li.on > a:focus {
+    background: none;
+}
+
+.wrap-theater h3 {
+    height: 41px;
+    margin: 30px 0 15px;
+    background: url(https://img.cgv.co.kr/r2014/images/common/bg/bg_h3_line.jpg) repeat-x 0 50%;
+    line-height: 41px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.wrap-theater h3 > img {
+    padding: 0 8px;
+}
+
+
+.sect-theater {
+    position: relative;
+    
+}
+
+.sect-theater .theater-tit {
+    text-align: left;
+}
+
+.sect-theater h4 {
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.sect-theater h4 > span {
+    color: #333333;
+    font-size: 29px;
+    font-weight: 900;
+    vertical-align: top;
+}
+
+.wrap-theaterinfo {
+    position: relative;
+}
+
+.wrap-theaterinfo .box-image {
+    width: 980px;
+    height: 420px;
+}
+
+.thumb-image {
+    display: block;
+    position: relative;
+}
+
+.wrap-theaterinfo .box-image .thumb-image > img {
+    width: 980px;
+    height: 420px;
+}
+
+.box-image img {
+    width: 100%;
+}
+
+.box-contents {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 920px;
+    padding: 20px 30px;
+    background: url(https://img.cgv.co.kr/R2014/images/common/bg/bg_dim80.png) 0 0 repeat;
+    color: #fdfcf0;
+}
+
+.wrap-theaterinfo .theater-info {
+    position: relative;
+    float: left;
+    width: 608px;
+}
+
+.title {
+    display: block;
+    /* color: #333333;
+    white-space: nowrap; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.wrap-theaterinfo .theater-info .title {
+    padding-top: 10px;
+    width: 400px;
+    color: #fdfcf0;
+    font-size: 13px;
+    text-overflow: initial;
+    white-space: initial;
+}
+
+.strong .title {
+    font-weight: 500;
+}
+
+.wrap-theaterinfo .theater-info .title > a {
+    display: inline-block;
+    margin-left: 10px;
+    color: #b1b1ab;
+    font-size: 11px;
+    /* color: inherit;
+    text-decoration: none; */
+}
+
+.wrap-theaterinfo .theater-info .txt-info {
+    float: left;
+    width: 409px;
+    height: 70px;
+    padding-top: 14px;
+    color: #fdfcf0;
+    line-height: 1.6;
+}
+
+.txt-info {
+    display: block;
+    color: #999999;
+    font-size: 12px;
+}
+
+.wrap-theaterinfo .theater-info .txt-info > em {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.txt-info > em {
+    display: block;
+}
+
+em {
+    font-style: normal;
+}
+
+
+
+.wrap-theaterinfo .theater-info .txt-info > span {
+    display: block;
+    height: 36px;
+    overflow: hidden;
+}
+
+.noti-theater {
+    position: relative;
+    float: right;
+    width: 280px;
+    height: 98px;
+    padding: 10px 0 0 30px;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    overflow: hidden;
+}
+
+.noti-theater > h5 {
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.noti-theater > ul > li {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.theater-ad {
+    margin: 20px 0 15px;
+    clear: both;
+    text-align: center;
+}
+
+.line_two {
+    background: url(https://img.cgv.co.kr/r2014/images/common/bg/bg_h3_line.jpg) repeat-x 0 50%;
+}
+.tab-menu {
+    margin: 20px 0 15px;
+    clear: both;
+    text-align: center;
+}
+
+.cols-content {
+    padding-top: 10px;
+    margin-top: 10px;
+
+}
+
+.cols-content .col-detail:first-child {
+    float: left;
+}
+
+.cols-content .col-detail {
+    position: relative;
+    width: 800px;
+    float: left;
+}
+
+
+
+.sect-theater-info {
+    position: relative;
+    margin-top: 30px;
+}
+
+.sect-theater-info h4 {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #222222;
+    color: #222222;
+    font-size: 17px;
+}
+
+.ico-bus {
+    display: inline;
+    width: 50px;
+    height: 27px;
+    background: url(cgv/img/bus.PNG) -200px -130px no-repeat;
+    vertical-align: middle;
+    /* font: 0/0 a; */
+    zoom: 1;
+}
+
+.info-contents {
+    line-height: 1.6;
+    color: #222222;
+}
+
+.ico-parking {
+    display: inline;
+    width: 50px;
+    height: 27px;
+    vertical-align: middle;
+    /* font: 0/0 a; */
+    zoom: 1;
+}
+
+
+
+
