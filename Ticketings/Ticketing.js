@@ -31,7 +31,7 @@ var movie_info_text = document.querySelector(".movie_info_text");
 
 list1.onclick = function() {
  
-    movie_info_img.src = "imgs/small04.jpg";
+    movie_info_img.src = "/Ticketings/img/small04.jpg";
     movie_info_text.innerHTML = "도라에몽<br/>"
                                 + "-진구와 하늘의 유토피아-";
 
@@ -39,14 +39,14 @@ list1.onclick = function() {
 
 list2.onclick = function() {
 
-    movie_info_img.src = "imgs/small05.jpg";
+    movie_info_img.src = "/Ticketings/img/small05.jpg";
     movie_info_text.innerHTML = "악마들"
 
 }
 
 list3.onclick = function() {
 
-    movie_info_img.src = "imgs/small01.jpg";
+    movie_info_img.src = "/Ticketings/img/small01.jpg";
     movie_info_text.innerHTML = "미션 임파서블<br/>"
                                 + "-데드 레코딩-";
 
@@ -54,7 +54,7 @@ list3.onclick = function() {
 
 list4.onclick = function() {
 
-    movie_info_img.src = "imgs/small02.jpg";
+    movie_info_img.src = "/Ticketings/img/small02.jpg";
     movie_info_text.innerHTML = "스파이더맨<br/>"
                                 + "-어크로스 더 유니버스-";
 
@@ -62,7 +62,7 @@ list4.onclick = function() {
 
 list5.onclick = function() {
 
-    movie_info_img.src = "imgs/small03.jpg";
+    movie_info_img.src = "/Ticketings/img/small03.jpg";
     movie_info_text.innerHTML = "엘리멘탈"
 
 }
