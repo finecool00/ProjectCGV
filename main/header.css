@@ -1,0 +1,457 @@
+@import url(/main/reset.css);
+
+#cgv-wrap {
+    width: 100%;
+    min-width: 1040px;
+    position: relative;
+}
+
+.header {
+    z-index: 101;
+}
+
+.header .contents {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.header .header-content {
+    margin-bottom: 52px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.header-content .contents {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 6px 25px 5px;
+}
+
+.header-content .contents h1 {
+    display: inline-flex;
+    align-items: flex-end;
+    height: 53px;
+    box-sizing: border-box;
+}
+
+.header-content .contents h1 a {
+    display: block;
+    height: 100%;
+}
+
+.header-content .contents h1 a img {
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: contain; /* 요소 크기에 맞게 img태그의 크기를 조정하는 방법 */
+}
+
+.header-content .contents h1 span {
+    font-weight: 300;
+    font-size: 16px;
+    color: #222;
+    letter-spacing: 0.313em;
+    line-height: 1.500em;
+}
+
+.header-content .contents .memberinfo-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header-content .contents .memberinfo-wrap li {
+    margin-left: 44px;
+    margin-top: 2px;
+}
+
+.header-content .contents .memberinfo-wrap li a {
+    display: block;
+    position: relative;
+    padding-bottom: 19px;
+}
+
+.header-content .contents .memberinfo-wrap li a img {
+    width: 36px;
+    height: 36px;
+}
+
+.header-content .contents .memberinfo-wrap li a span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.462em;
+    white-space: nowrap;
+    transform: translate(-50%, 0);
+}
+
+/* nav */
+.nav {
+    position: absolute;
+    top: 115px;
+    width: 100%;
+    padding: 5px 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 100;
+    border-bottom: 1px solid #222;
+}
+
+.nav::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 49px;
+    width: 100%;
+    height: 2px;
+    background-color: #fb4357;
+}
+
+.nav .contents {
+    position: relative; /* nav-menu > li > h2 */
+}
+
+.nav .contents h1 {
+    display: none;
+}
+
+.nav .nav-menu {
+    display: inline-flex;
+}
+
+.nav-menu > li {
+    width: 162px;
+    padding: 20px 0;
+}
+
+.nav-menu > li:first-child {
+    width: 137px;
+}
+
+.nav-menu > li:last-child {
+    width: 195px;
+}
+
+.nav-menu > li > h2 {
+    position: absolute;
+    top: 7px;
+}
+
+.nav-menu > li:nth-child(2) > h2 {
+    left: 80px;
+}
+
+.nav-menu > li:nth-child(3) > h2 {
+    left: 160px;
+}
+
+.nav-menu > li:nth-child(4) > h2 {
+    left: 240px;
+}
+
+.nav-menu > li:nth-child(5) > h2 {
+    left: 335px;
+}
+
+.nav-menu > li:last-child > h2 {
+    left: 430px;
+}
+
+.nav-menu > li > h2 > a {
+    font-weight: bolder;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.500em;
+}
+
+.nav-menu > li > h2 > a strong {
+    font-weight: 800;
+    color: #fb4357;
+}
+
+.nav-menu .nav-overmenu {
+    position: relative;
+    margin-bottom: 8px;
+    padding: 25px 0 0 25px;
+}
+
+.nav-overmenu dt {
+    padding-top: 18px;
+}
+
+.nav-overmenu dt h2 a {
+    font-weight: 700;
+}
+
+.nav-overmenu dd {
+    margin-top: 16px;
+}
+
+.nav-overmenu a {
+    color: #222;
+    font-size: 14px;
+}
+
+.nav .totalsearch-wrap {
+    display: inline-flex;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    padding: 0 36px 0 10px;
+}
+
+.nav .totalsearch-wrap::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 1px;
+    height: 20px;
+    background-color: #cacaca;
+}
+
+.nav .totalsearch-wrap::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 1px;
+    height: 20px;
+    background-color: #cacaca;
+}
+/* fixed nav */
+.nav.fixed {
+    position: fixed;
+    top: 0px;
+    min-width: 1040px;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.nav.fixed::after {
+    top: 0;
+    bottom: auto;
+    height: 60px;
+    background-image: linear-gradient(to right, rgb(215, 67, 87), rgb(241,79,58) 59%, rgb(239, 100, 47));
+    z-index: 1;
+}
+
+.nav.fixed .contents {
+    z-index: 2;
+}
+
+.nav.fixed .contents h1 {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 70px;
+    height: 32px;
+    z-index: 3;
+}
+
+.nav.fixed .contents h1 a {
+    display: block;
+}
+
+.nav.fixed .contents h1 a img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav.fixed .contents .nav-menu > li > h2 > a {
+    color: #fff;
+}
+
+.nav.fixed .contents .nav-menu > li:first-child > h2 {
+    left: 120px;
+}
+
+.nav.fixed .contents .nav-menu > li:nth-child(2) > h2 {
+    left: 200px;
+}
+
+.nav.fixed .contents .nav-menu > li:nth-child(3) > h2 {
+    left: 280px;
+}
+
+.nav.fixed .contents .nav-menu > li:nth-child(4) > h2 {
+    left: 360px;
+}
+
+.nav.fixed .contents .nav-menu > li:nth-child(5) > h2 {
+    left: 455px;
+}
+
+.nav.fixed .contents .nav-menu > li:last-child > h2 {
+    left: 550px;
+}
+
+.nav.fixed .contents .nav-menu > li > h2 > a strong {
+    color: #fff;
+}
+
+.nav.fixed .contents .totalsearch-wrap label input {
+    color: #fff;
+    background-color: transparent;
+}
+/* ---fixed nav--- */
+
+.totalsearch-wrap label {
+    display: block;
+}
+
+.totalsearch-wrap label input {
+    width: 180px;
+    height: auto;
+    padding: 0 0 0 7px;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.500em;
+    border: none;
+}
+
+.totalsearch-wrap .btn-totalsearch {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: -1px;
+    width: 26px;
+    height: 26px;
+    font-size: 0;
+    line-height: 0;
+    background: transparent url('https://img.cgv.co.kr/R2014/images/common/ico/search.png') center center/26px scroll no-repeat;
+    border: none;
+}
+
+#cgv-wrap .fixedBtn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 50%;
+    margin-right: -548px;
+    bottom: 80px;
+    min-height: 50px;
+    margin-left: 440px;
+    text-align: center;
+    z-index: 7;
+}
+
+@media screen {
+    .fixedBtn-wrap {
+        right: 50%;
+        margin-right: -548px;
+    }
+}
+
+.fixedBtn-wrap .btn-fixedTicketing {
+    position: absolute;
+    left: auto;
+    right: 0;
+    width: 136px;
+    padding: 15px 0 17px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    background-image: linear-gradient(to left, rgb(255, 115, 86), rgb(251, 67, 87));
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    transition: right 0.4s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fixedBtn-wrap.topBtn .btn-fixedTicketing {
+    right: 58px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.fixedBtn-wrap .btn-gotoTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.fixedBtn-wrap .btn-gotoTop img {
+    width: 15px;
+    height: 21px;
+}
+
+.fixedBtn-wrap.topBtn .btn-gotoTop {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.4s;
+}
+
+
+/* footer */
+
+/* footer */
+footer .bottom-wrap {
+    height: 120px;
+}
+
+footer .policy-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 23px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+footer .policy-list li a {
+    font-weight: 600;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.462em;
+}
+
+footer .policy-list li a:hover {
+    text-decoration: underline;
+}
+
+footer .company-info-wrap {
+    max-width: 980px;
+    padding: 23px 0;
+    margin: 0 auto;
+}
+
+footer .company-info-wrap .company-info {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.667em;
+}
+
+.company-info address {
+    font-style: normal;
+}
+
+.company-info .company-info-list {
+    display: flex;
+}
+
+.company-info-list dt::after {
+    content: ':';
+    padding: 0 4px;
+}
+
+.company-info-list dt:not(:first-child)::before {
+    content: '·';
+    padding: 0 8px 0 4px;
+}
