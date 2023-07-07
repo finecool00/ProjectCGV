@@ -19,15 +19,14 @@
 </head>
 
 <body>
-    <!-- 헤더 -->
     <div id="cgv-wrap">
         <div class="header">
             <!-- header title -->
             <div class="header-content">
                 <div class="contents">
                     <!-- title(왼) -->
-                    <h1 onclick="">
-                        <a href="">
+                    <h1>
+                        <a onclick="location.href='/main/main.html'">
                             <img src="https://img.cgv.co.kr/R2014/images/common/logo/logoRed.png" alt="CGV">
                         </a>
                         <span>CULTUREPLEX</span>
@@ -82,10 +81,10 @@
                             </h2>
                             <dl class="nav-overmenu" style="display: none;">
                                 <dt>
-                                    <h2><a href="#">영화</a></h2>
+                                    <h2><a href="">영화</a></h2>
                                 </dt>
                                 <dd>
-                                    <h3><a href="">무비차트</a></h3>
+                                    <h3><a onclick="location.href='/MovieInfo/movie_chart.html'">무비차트</a></h3>
                                 </dd>
                                 <dd>
                                     <h3><a href="">아트하우스</a></h3>
@@ -104,7 +103,7 @@
                                     <h2><a href="#">극장</a></h2>
                                 </dt>
                                 <dd>
-                                    <h3><a href="">CGV 극장</a></h3>
+                                    <h3><a onclick="location.href='/theater/theaterguide1.html'">CGV 극장</a></h3>
                                 </dd>
                                 <dd>
                                     <h3><a href="">특별관</a></h3>
@@ -113,11 +112,11 @@
                         </li>
                         <li>
                             <h2>
-                                <a href="#"><strong>예매</strong></a>
+                                <a onclick="location.href='/Ticketings/ticketing.html'"><strong>예매</strong></a>
                             </h2>
                             <dl class="nav-overmenu" style="display: none;">
                                 <dt>
-                                    <h2><a href="#">예매</a></h2>
+                                    <h2><a onclick="location.href='/Ticketings/ticketing.html'">예매</a></h2>
                                 </dt>
                                 <dd>
                                     <h3><a href="">빠른예매</a></h3>
@@ -230,8 +229,9 @@
                 </div>
             </div>
         </div>
+    
         <div class="fixedBtn-wrap">
-            <a href="#" class="btn-fixedTicketing">예매하기</a>
+            <a class="btn-fixedTicketing" onclick="location.href='/Ticketings/ticketing.html'">예매하기</a>
             <a href="#none" class="btn-gotoTop">
                 <img src="https://img.cgv.co.kr/R2014/images/common/btn/gotoTop.png" alt="최상단으로 이동">
             </a>
