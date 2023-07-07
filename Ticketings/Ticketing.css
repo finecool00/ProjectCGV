@@ -13,9 +13,13 @@ body{
 * {padding: 0; margin: 0; text-decoration: none;}
 ul, li {list-style: none;} 
 * {margin: 0 auto;}
-a, span {color: black;}
+/* a, span {color: black;} */
 
 /* body영역 */
+
+.ticketings {
+    
+}
 
 .reserv_top_menu {
     /* border: 1px solid #777; */
@@ -84,6 +88,9 @@ a, span {color: black;}
     margin-bottom: 20px;
 
 }
+.movie_select_sort > .first {
+    color: #000;
+}
 
 .movie_select_box {
     /* border: 1px solid #777; */
@@ -122,6 +129,8 @@ a, span {color: black;}
     display: block;
     
 }
+
+.region
 
 
 .date {
@@ -196,13 +205,13 @@ a, span {color: black;}
 
 /* 모닝, 야간 이미지 */
 .day > .day_img {
-    background-image: url("imgs/icon_morning_night.png");
+    background-image: url("/Ticketings/img/icon_morning_night.png");
     background-position: 2px -35px;
     padding-left: 18px;
 }
 
 .night > .night_img {
-    background-image: url("imgs/icon_morning_night.png");
+    background-image: url("/Ticketings/img/icon_morning_night.png");
     background-position: 3px -15px;
     padding-left: 18px;
 }
