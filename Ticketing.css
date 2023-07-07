@@ -1,0 +1,669 @@
+/* 폰트 */
+
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 공통 설정 */
+* {padding: 0; margin: 0; text-decoration: none;}
+ul, li {list-style: none;} 
+* {margin: 0 auto;}
+a, span {color: black;}
+
+/* body영역 */
+
+.reserv_top_menu {
+    /* border: 1px solid #777; */
+    width: 1000px;
+    overflow: hidden;
+}
+
+#re_booking {
+    margin: 0;
+    float: right;
+}
+
+#main_box {
+    /* border: 1px solid #777; */
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+/* 예매 선택 메뉴 제목 */
+.movie_head > p {
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+.theater_head > p {
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+.date_head > p {
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+.time_head > p {
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+/* 예매 선택 메뉴 본문 */
+
+.movieList {
+    border: 1px solid #777;
+    margin: 0;
+    width: 370px;
+    background-color:beige;
+}
+
+.movie_select {
+    /* border: 1px solid #777; */
+    
+}
+
+.movie_select_sort {
+    /* border: 1px solid #777; */
+    margin-bottom: 20px;
+
+}
+
+.movie_select_box {
+    /* border: 1px solid #777; */
+}
+
+.movie_select_list {
+    /* border: 1px solid #777; */
+    height: 130px;
+}
+
+.movie_select_list > li > a { /* 내용 추가할 것! */
+    color: black;
+
+}
+
+
+.theaterList {
+    border: 1px solid #777;
+    margin: 0;
+    width: 150px;
+    background-color:beige;
+    
+    
+}
+
+.theater_select,
+.theater_select2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+     
+}
+
+.theater_select_region,
+.theater_select_region2 {
+    display: block;
+    
+}
+
+
+.date {
+    border: 1px solid #777;
+    margin: 0;
+    width: 100px;
+    background-color:beige;
+}
+
+.date .year_month_box2 span {
+    display: block;
+    text-align: center;
+}
+.date .year_month_box2 .year {
+    font-size: 13px;
+}
+.date .year_month_box2 .month {
+    font-size: 20px;
+}
+
+
+.date .date_list { /* 있으면 넣을 것! */
+    
+}
+.marking1 {
+    font-size: 2px;
+    visibility: hidden;
+}
+.marking2 {
+    font-size: 2px;
+    visibility: hidden;
+}
+.marking3 {
+    font-size: 2px;
+    visibility: hidden;
+}
+.marking4 {
+    font-size: 2px;
+    visibility: hidden;
+}
+.marking5 {
+    font-size: 2px;
+    visibility: hidden;
+}
+.marking6 {
+    font-size: 2px;
+    visibility: hidden;
+}
+.dow_box1,
+.dow_box2,
+.dow_box3,
+.dow_box4,
+.dow_box5,
+.dow_box6 {
+    width: 50px;
+    text-align: center;
+}
+
+.time {
+    border: 1px solid #777;
+    margin: 0;
+    width: 370px;
+    background-color:beige;
+}
+
+.time .day {
+    display: inline-block;
+}
+.time .night {
+    display: inline-block;
+}
+
+/* 모닝, 야간 이미지 */
+.day > .day_img {
+    background-image: url("imgs/icon_morning_night.png");
+    background-position: 2px -35px;
+    padding-left: 18px;
+}
+
+.night > .night_img {
+    background-image: url("imgs/icon_morning_night.png");
+    background-position: 3px -15px;
+    padding-left: 18px;
+}
+
+.time_body_basic {
+    position: relative;
+}
+
+.day {
+    visibility: hidden;
+}
+.night {
+    visibility: hidden;
+}
+.detail_summary {
+    visibility: hidden;
+}
+
+.placeholder_hidden > span { /* 토글로 왔다갔다!?! 아니면 그냥 이벤트 줄 것*/
+    position: absolute;
+    top: 80px;
+    left: 75px;
+}
+
+.time_seat_detail {
+    display: inline-block;
+    margin-right: 25px;
+    padding-left: 5px;
+    visibility: hidden;
+}
+.time_seat_detail_a {
+    display: inline-block;
+    margin-right: 25px;
+    padding-left: 5px;
+    visibility: hidden;
+}
+
+
+/* 선택 영화 정보 */
+#result_menu {
+    border: 1px solid #777;
+    width: 1000px;
+    height: auto; /* 바꾸려면 바꿀 것 */
+    background-color: #555;
+    color: #fff;
+}
+#result_menu > .result_menu_box > .complete_booking > a {
+    color: #fff;
+}
+
+.result_menu_box {
+    border: 1px solid #777;
+    display: flex;
+    justify-content: space-around;
+}
+
+.movie_info,
+.theater_info,
+.seat_info,
+.complete_booking {
+    /* border: 1px solid #777; */
+    border-right: 2px solid #777;
+    width: 25%;
+    height: 180px;
+    margin: 20px 0;
+    position: relative;
+}
+.complete_booking .booked {
+    position: absolute;
+    top: 100px;
+    left: 90px;
+}
+.complete_booking .checking {
+    position: absolute;
+    top: 60px;
+    left: 90px;
+}
+
+
+.movie_info .movie_info_img {
+    width: 100px;
+    text-align: center;
+    display: block;
+}
+.movie_info .movie_info_text {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+}
+
+.theater_info_result,
+.theater_info_date,
+.theater_info_time {
+    display: block;
+}
+
+
+/* 좌석 정보 */
+
+#seat_menu {
+    border: 1px solid #777;
+    width: 1000px;
+}
+
+.seat_menu_title {
+    border: 1px solid #777;
+    background-color: #000;
+}
+.seat_menu_title > p {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+/* 좌석 정보(인원수) */
+
+.people {
+    border: 1px solid #777;
+    display: flex;
+    justify-content: space-around;
+    background-color: beige;
+}
+
+.people_num {
+    border: 1px solid #777;
+    margin: 0;
+    padding: 5px;
+    width: 310px;
+}
+
+.people_count {
+    overflow: hidden;
+}
+
+.people_count > span {
+    float: left;
+    width: 20%;
+
+}
+.people_count > ul {
+    float: right;
+    width: 80%;
+    text-align: center;
+}
+.people_count > ul > li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.discount_info {
+    /* border: 1px solid #777; */
+    text-align: right;
+    padding-top: 3px;
+}
+
+/* 좌석 정보(예약현황) */
+
+.reservation {
+    border: 1px solid #777;
+    margin: 0;
+    padding: 5px;
+    width: 660px;
+}
+
+.reservation .reset_btn {
+    text-align: right;
+}
+
+.teather_info { /* 왼쪽 */
+    border: 1px solid #777;
+}
+
+.date_info { /* 왼쪽 */
+    border: 1px solid #777;
+}
+
+.reset_btn { /* 오른쪽 */
+    border: 1px solid #777;
+}
+
+
+/* 미니맵 */
+
+.miniMap {
+    border: 1px solid #777;
+    background-color: beige;
+    height: 500px;
+}
+
+.miniMap_box1 {
+    border: 1px solid #777;
+    height: 500px;
+}
+
+.miniMap_box2 {
+    border: 1px solid #777;
+    height: 500px;
+    
+}
+
+.screen {
+    border: 2px solid #777;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 500px;
+    background-color: #999;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    /* flex-basis: auto; */
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.row > span {
+    margin: 0 50px 0 0;
+    /* border: 1px solid #777; */
+}
+
+.row > .seat_group1 {
+    margin: 0;
+    /* border: 1px solid #777; */
+    width: 350px;
+    overflow: hidden;
+}
+
+.row > .seat_group1 > a {
+    float:left;
+    width: 10%;
+}
+
+.row > .seat_group1 > a > span {
+    /* border: 1px solid #777; */
+    margin: 0 0 0 6px;
+    float: left;
+    width: 20px;
+    text-align: center;
+}
+
+.row > .seat_group2 {
+    margin: 0;
+    /* border: 1px solid #777; */
+    width: 350px;
+    overflow: hidden;
+}
+
+.row > .seat_group2 > a {
+    float:left;
+    width: 10%;
+}
+
+.row > .seat_group2 > a > span {
+    /* border: 1px solid #777; */
+    margin: 0 0 0 6px;
+    float: left;
+    width: 20px;
+    text-align: center;
+}
+
+.row > .seat_group3 {
+    margin: 0;
+    /* border: 1px solid #777; */
+    width: 350px;
+    overflow: hidden;
+}
+
+.row > .seat_group3 > a {
+    float:left;
+    width: 10%;
+}
+
+.row > .seat_group3 > a > span {
+    /* border: 1px solid #777; */
+    margin: 0 0 0 6px;
+    float: left;
+    width: 20px;
+    text-align: center;
+}
+
+.row > .seat_group4 {
+    margin: 0;
+    /* border: 1px solid #777; */
+    width: 350px;
+    overflow: hidden;
+}
+
+.row > .seat_group4 > a {
+    float:left;
+    width: 10%;
+}
+
+.row > .seat_group4 > a > span {
+    /* border: 1px solid #777; */
+    margin: 0 0 0 6px;
+    float: left;
+    width: 20px;
+    text-align: center;
+}
+
+.row > .seat_group5 {
+    margin: 0;
+    /* border: 1px solid #777; */
+    width: 350px;
+    overflow: hidden;
+}
+
+.row > .seat_group5 > a {
+    float:left;
+    width: 10%;
+}
+
+.row > .seat_group5 > a > span {
+    /* border: 1px solid #777; */
+    margin: 0 0 0 6px;
+    float: left;
+    width: 20px;
+    text-align: center;
+}
+
+.row > .seat_group6 {
+    margin: 0;
+    /* border: 1px solid #777; */
+    width: 350px;
+    overflow: hidden;
+}
+
+.row > .seat_group6 > a {
+    float:left;
+    width: 10%;
+}
+
+.row > .seat_group6 > a > span {
+    /* border: 1px solid #777; */
+    margin: 0 0 0 6px;
+    float: left;
+    width: 20px;
+    text-align: center;
+}
+
+.row > .seat_group7 {
+    margin: 0;
+    /* border: 1px solid #777; */
+    width: 350px;
+    overflow: hidden;
+}
+
+.row > .seat_group7 > a {
+    float:left;
+    width: 10%;
+}
+
+.row > .seat_group7 > a > span {
+    /* border: 1px solid #777; */
+    margin: 0 0 0 6px;
+    float: left;
+    width: 20px;
+    text-align: center;
+}
+
+.row > .seat_group8 {
+    margin: 0;
+    /* border: 1px solid #777; */
+    width: 350px;
+    overflow: hidden;
+}
+
+.row > .seat_group8 > a {
+    float:left;
+    width: 10%;
+}
+
+.row > .seat_group8 > a > span {
+    /* border: 1px solid #777; */
+    margin: 0 0 0 6px;
+    float: left;
+    width: 20px;
+    text-align: center;
+}
+
+/* 좌석 상세 정보 */
+
+.seat_detail_box {
+    position: relative;
+}
+
+.seat_detail { /* position!?! */
+    border: 1px solid #777;
+    position: absolute;
+    top: -390px;
+    left: 750px; /* 바꿀 것 */
+}
+
+
+
+.seat_type {
+    border: 1px solid #777;
+}
+
+
+/* 하단 배너 */
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper .swiper-wrapper img {
+    height: 100px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+
+
+/* 할인안내 팝업 */
+
+.discountImg {
+    width: 600px;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.discountBox {
+    position: relative;
+}
+
+.discountBox button {
+    position: absolute;
+    top: 90px;
+    left: 270px;
+}
+
+.discountMain {
+    
+}
+
+
+/* 예매완료 안내 팝업 */
+.reservBox {
+    margin: 0 auto;
+}
+
+.bBox {margin: 0 auto;}
+.bBox .reservB {text-align: center; font-size: 20px; margin-top: 20px;}
+.reservBox .boxP {text-align: center; margin: 20px 0; font-size: 30px;}
+.reservBox .boxSmall { text-align: center;}
+
+.bBoxMain {
+    background-color: beige;
+}
+
+.btnBox {
+    position: relative;
+}
+
+.btnBox > .close {
+    position: absolute;
+    top: 50px;
+    left: 230px;
+}

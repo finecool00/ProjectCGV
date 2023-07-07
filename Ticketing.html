@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- 경로 다시 바꿀 것 -->
+    <link rel="stylesheet" href="/Project2/swiper.css">
+    <script src="/Project2/swiper.js"></script>
+    
+    <link rel="stylesheet" href="/Project2/Ticketing.css">
+    
+    
+</head>
+<body>
+    <!-- top_menu -->
+    <div class="reserv_top_menu">
+        <button type="reset" id="re_booking" onclick="history.go(0)">다시 예매하기</button>
+    </div>
+    
+    <!-- main_menu -->
+    <div id="main_box">
+        <div class="movieList">
+            <div class="movie_head">
+                <p>영화</p>
+            </div>
+            <div class="movie_body">
+                <div class="movie_select">
+                    <div class="movie_select_sort">
+                        <a class="first" href="#">예매율순</a>
+                        <a class="second" href="#">가나다순</a>
+                    </div>
+                    <div class="movie_select_box">
+                        <ul class="movie_select_list">
+                            <li class="lists" value="2">
+                                <img src="imgs/ageAll.svg" alt="연령등급">
+                                <a class="a" href="#">도라에몽 - 징구와 하늘의 유토피아</a>
+                            </li>
+                            <li class="lists" value="4">
+                                <img src="imgs/age18.svg" alt="연령등급">
+                                <a class="b" href="#">악마들</a>
+                            </li>
+                            <li class="lists" value="1">
+                                <img src="imgs/age15.svg" alt="연령등급">
+                                <a class="c" href="#">미션 임파서블 - 얼라이브 레코딩</a>
+                            </li>
+                            <li class="lists" value="3">
+                                <img src="imgs/ageAll.svg" alt="연령등급">
+                                <a class="d" href="#">핑크스파이더맨 - 어크로스 더 유니버스</a>
+                            </li>
+                            <li class="lists" value="5">
+                                <img src="imgs/ageAll.svg" alt="연령등급">
+                                <a class="e" href="#">엘리멘털</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="theaterList">
+            <div class="theater_head">
+                <p>극장</p>
+            </div>
+            <div class="theater_body">
+                <div class="theater_select">
+                    <div class="theater_select_region">
+                        <ul class="region_select_list">
+                            <li><a href="#">서울</a></li>
+                        </ul>
+                    </div>
+                    <div class="theater_select_store">
+                        <ul class="store_select_list">
+                            <li><a class="a" href="#">강남</a></li>
+                        </ul>
+                        <ul class="store_select_list">
+                            <li><a class="b" href="#">강변</a></li>
+                        </ul>
+                        <ul class="store_select_list">
+                            <li><a class="c" href="#">건대입구</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="theater_select2">
+                    <div class="theater_select_region2">
+                        <ul class="region_select_list2">
+                            <li><a href="#">인천</a></li>
+                        </ul>
+                    </div>
+                    <div class="theater_select_store2">
+                        <ul class="store_select_list2">
+                            <li><a class="a2" href="#">계양</a></li>
+                        </ul>
+                        <ul class="store_select_list2">
+                            <li><a class="b2" href="#">남주안</a></li>
+                        </ul>
+                        <ul class="store_select_list2">
+                            <li><a class="c2" href="#">부평</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="date">
+            <div class="date_head">
+                <p>날짜</p>
+            </div>
+            <div class="date_body">
+                <div class="year_month">
+                    <div class="year_month_box1">
+                        
+                            <div class="year_month_box2">
+                                <span class="year">2023</span>
+                                <span class="month">7</span>
+                            </div>
+                        <ul class="date_list">
+                            <li>
+                                <a class="marker1" href="#">
+                                    <div class="dow_box1">
+                                        <span class="marking1">▶</span> <!-- 선택되면 활성화 -->
+                                        <span class="dows1">금</span>
+                                        <span class="dow_num1">7</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="marker2" href="#">
+                                    <div class="dow_box2">
+                                        <span class="marking2">▶</span> <!-- 선택되면 활성화 -->
+                                        <span class="dows2">토</span>
+                                        <span class="dow_num2">8</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="marker3" href="#">
+                                    <div class="dow_box3">
+                                        <span class="marking3">▶</span> <!-- 선택되면 활성화 -->
+                                        <span class="dows3">일</span>
+                                        <span class="dow_num3">9</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="marker4" href="#">
+                                    <div class="dow_box4">
+                                        <span class="marking4">▶</span> <!-- 선택되면 활성화 -->
+                                        <span class="dows4">월</span>
+                                        <span class="dow_num4">10</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="marker5" href="#">
+                                    <div class="dow_box5">
+                                        <span class="marking5">▶</span> <!-- 선택되면 활성화 -->
+                                        <span class="dows5">화</span>
+                                        <span class="dow_num5">11</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>    
+                                <a class="marker6" href="#">
+                                    <div class="dow_box6">
+                                        <span class="marking6">▶</span> <!-- 선택되면 활성화 -->
+                                        <span class="dows6">수</span>
+                                        <span class="dow_num6">12</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="time">
+            <div class="time_head">
+                <p>시간</p>
+            </div>
+            <div class="time_body_basic">
+                <div class="day">
+                    <span class="day_img"></span>
+                    <span class="day_content">모닝</span>
+                </div>
+                <div class="night">
+                    <span class="night_img"></span>
+                    <span class="night_content">심야</span>
+                </div>
+                <div class="placeholder_hidden">
+                    <span>영화, 극장, 날짜를 선택해주세요</span>
+                </div>
+                <div class="time_detail">
+                    <div class="detail_summary">
+                        <span>2D(자막) 2관 7층 (총 80석)</span>
+                    </div>
+                    <div class="time_seat_detail">
+                        <a href="#" class="x">11:30</a>
+                        <span>48석</span>
+                    </div>
+                    <div class="time_seat_detail_a">
+                        <a href="#" class="y">15:00</a>
+                        <span>40석</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js 영역 고민해볼 것!!!! -->
+    <div id="result_menu">
+        <div class="result_menu_box">
+            <div class="movie_info">
+                <img src="" class="movie_info_img">
+                <span class="movie_info_text"></span>
+            </div>
+            <div class="theater_info">
+                <span class="theater_info_result"></span>
+                <span class="theater_info_date"></span>
+                <span class="theater_info_time"></span>
+            </div>
+            <div class="seat_info"></div>
+            <div class="complete_booking">
+                <a href="#" class="checking">예매확인</a>
+                <a href="#" class="booked">예매완료</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 좌석 선택 -->
+    <div id="seat_menu">
+        <div class="seat_menu_title">
+            <p>인원 / 좌석</p>
+        </div>
+        <div class="people">
+            <div class="people_num">
+                <div>*최대 5명 선택 가능</div>
+                <div class="people_count">
+                    <span>인원수</span>
+                    <ul class="people_count_nums">
+                        <li><a href="#" class="num1">1</a></li>
+                        <li><a href="#" class="num2">2</a></li>
+                        <li><a href="#" class="num3">3</a></li>
+                        <li><a href="#" class="num4">4</a></li>
+                        <li><a href="#" class="num5">5</a></li>
+                    </ul>
+                </div>
+                <div class="discount_info"><a href="#">관람 할인 안내</a></div> <!-- 고민중 -->
+            </div>
+            <div class="reservation">
+                <div class="teather_info">
+                    <span class="t_name">영화관 이름</span>
+                    <span class="t_info">상영관 정보</span>
+                    <span class="left_seat">남은좌석</span>
+                </div>
+                <div class="date_info">
+                    <b class="rev_date">예약날짜</b>
+                    <b class="rev_num">요일</b>
+                    <b class="rev_time">상영시간</b>
+                </div>
+                <div class="reset_btn">
+                    <a href="#">
+                        <span>상영시간 변경하기</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="miniMap">
+            <div class="miniMap_box1">
+                <div class="miniMap_box2">
+                    <div class="screen">
+                        <b>SCREEN</b>
+                    </div>
+                    <div class="seat">
+                        <div class="row">
+                            <span class=>A</span>
+                            <div class="seat_group1">
+                                <a href="#" class="a1">1</a>
+                                <a href="#" class="a2">2</a>
+                                <a href="#" class="a3">3</a>
+                                <a href="#" class="a4">4</a>
+                                <a href="#" class="a5">5</a>
+                                <a href="#" class="a6">6</a>
+                                <a href="#" class="a7">7</a>
+                                <a href="#" class="a8">8</a>
+                                <a href="#" class="a9">9</a>
+                                <a href="#" class="a10">10</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <span>B</span>
+                            <div class="seat_group2">
+                                <a href="#" class="b1">1</a>
+                                <a href="#" class="b2">2</a>
+                                <a href="#" class="b3">3</a>
+                                <a href="#" class="b4">4</a>
+                                <a href="#" class="b5">5</a>
+                                <a href="#" class="b6">6</a>
+                                <a href="#" class="b7">7</a>
+                                <a href="#" class="b8">8</a>
+                                <a href="#" class="b9">9</a>
+                                <a href="#" class="b10">10</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <span>C</span>
+                            <div class="seat_group3">
+                                <a href="#" class="c1">1</a>
+                                <a href="#" class="c2">2</a>
+                                <a href="#" class="c3">3</a>
+                                <a href="#" class="c4">4</a>
+                                <a href="#" class="c5">5</a>
+                                <a href="#" class="c6">6</a>
+                                <a href="#" class="c7">7</a>
+                                <a href="#" class="c8">8</a>
+                                <a href="#" class="c9">9</a>
+                                <a href="#" class="c10">10</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <span>D</span>
+                            <div class="seat_group4">
+                                <a href="#" class="d1">1</a>
+                                <a href="#" class="d2">2</a>
+                                <a href="#" class="d3">3</a>
+                                <a href="#" class="d4">4</a>
+                                <a href="#" class="d5">5</a>
+                                <a href="#" class="d6">6</a>
+                                <a href="#" class="d7">7</a>
+                                <a href="#" class="d8">8</a>
+                                <a href="#" class="d9">9</a>
+                                <a href="#" class="d10">10</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <span>E</span>
+                            <div class="seat_group5">
+                                <a href="#" class="e1">1</a>
+                                <a href="#" class="e2">2</a>
+                                <a href="#" class="e3">3</a>
+                                <a href="#" class="e4">4</a>
+                                <a href="#" class="e5">5</a>
+                                <a href="#" class="e6">6</a>
+                                <a href="#" class="e7">7</a>
+                                <a href="#" class="e8">8</a>
+                                <a href="#" class="e9">9</a>
+                                <a href="#" class="e10">10</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <span>F</span>
+                            <div class="seat_group6">
+                                <a href="#" class="f1">1</a>
+                                <a href="#" class="f2">2</a>
+                                <a href="#" class="f3">3</a>
+                                <a href="#" class="f4">4</a>
+                                <a href="#" class="f5">5</a>
+                                <a href="#" class="f6">6</a>
+                                <a href="#" class="f7">7</a>
+                                <a href="#" class="f8">8</a>
+                                <a href="#" class="f9">9</a>
+                                <a href="#" class="f10">10</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <span>G</span>
+                            <div class="seat_group7">
+                                <a href="#" class="g1">1</a>
+                                <a href="#" class="g2">2</a>
+                                <a href="#" class="g3">3</a>
+                                <a href="#" class="g4">4</a>
+                                <a href="#" class="g5">5</a>
+                                <a href="#" class="g6">6</a>
+                                <a href="#" class="g7">7</a>
+                                <a href="#" class="g8">8</a>
+                                <a href="#" class="g9">9</a>
+                                <a href="#" class="g10">10</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <span>H</span>
+                            <div class="seat_group8">
+                                <a href="#" class="h1">1</a>
+                                <a href="#" class="h2">2</a>
+                                <a href="#" class="h3">3</a>
+                                <a href="#" class="h4">4</a>
+                                <a href="#" class="h5">5</a>
+                                <a href="#" class="h6">6</a>
+                                <a href="#" class="h7">7</a>
+                                <a href="#" class="h8">8</a>
+                                <a href="#" class="h9">9</a>
+                                <a href="#" class="h10">10</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 좌석 상세 정보 -->
+            <!-- <div class="seat_detail_box">
+                <div class="seat_detail"> -->
+                    <!-- <div class="seat_status">
+                        <span class="first">선택</span>
+                        <span class="second">예매완료</span>
+                        <span class="third">선택불가</span>
+                    </div> -->
+                    <!-- <div class="seat_type"> -->
+                        <!-- <span>Light석</span>
+                        <span>장애인석</span>
+                        <span>SWEETBOX</span>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 하단 배너 -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <img class="swiper-slide" src="imgs/banner01.jpg" alt="하단배너이미지">
+            <img class="swiper-slide" src="imgs/banner02.jpg" alt="하단배너이미지">
+            <img class="swiper-slide" src="imgs/banner03.jpg" alt="하단배너이미지">
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    /* 하단 배너 스와이퍼 */
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            autoplay : {
+                Delay : 5000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable : true,
+            },
+        });
+    </script>
+
+<!-- 다시 바꿀 것 -->
+<script src="/Project2/Ticketing.js"></script>
+</body>
+
+
+</html>
